@@ -37,7 +37,7 @@ public class StayDaoImpl implements StayDao {
 
     @Override
     public void readStay(String no) throws Exception{
-        String sql = "SELECT * FROM tblLavOphold WHERE fldHundeId = ?";
+        String sql = "SELECT * FROM tblLavOphold WHERE fldOpholdsId = ?";
         Connection conn = getConnection();
         PreparedStatement pstmt = conn.prepareStatement(sql);
         pstmt.setString(1, no);
@@ -57,22 +57,30 @@ public class StayDaoImpl implements StayDao {
     }
 
     @Override
-    public void readAllDepartments() throws Exception{
-        String sql = "SELECT * FROM Department";
+    public void readAllStay() throws Exception {
+
+    }
+
+    @Override
+    public void readAlltblLavOphold() throws Exception{
+        String sql = "SELECT * FROM tblLavOphold";
         Connection conn = getConnection();
         PreparedStatement pstmt = conn.prepareStatement(sql);
         ResultSet rs = pstmt.executeQuery();
-        boolean hasDepartments = false;
+        boolean hasStay = false;
         while (rs.next()) {
-            hasDepartments = true;
-            Department department = new Department();
-            department.setNo(rs.getString(1));
-            department.setName(rs.getString(2));
-            department.setLocation(rs.getString(3));
-            System.out.println(department.getNo()+" "+ department.getName()+department.getLocation());
+            hasStay = true;
+            Stay stay = new Stay();
+            stay.setVaccine(rs.getString(1));
+            stay.setFleaTreatment(rs.getString(2));
+            stay.setInsurance(rs.getString(3));
+            stay.setNeed(rs.getString(4));
+            stay.setWeight(rs.getInt(5));
+            stay.setDuration(rs.getInt(6));
+            System.out.println(stay.getVaccine()+" "+ stay.getFleaTreatment()+stay.getInsurance()+" "+ stay.getNeed()+" "+ stay.getWeight()+" "+ stay.getDuration()+" "+ stay.getDuration());
         }
-        if (!hasDepartments) {
-            System.out.println("No departments found.");
+        if (!hasStay) {
+            System.out.println("No Stay found.");
         }
     }
 }
