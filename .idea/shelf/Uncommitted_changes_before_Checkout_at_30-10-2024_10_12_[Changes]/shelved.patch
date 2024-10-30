@@ -1,0 +1,30 @@
+Index: src/main/java/org/example/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package org.example;\r\nimport org.example.EventLog.EventLog;\r\nimport org.example.EventLog.EventLogDao;\r\nimport org.example.EventLog.EventlogDaoImpl;\r\n\r\nimport java.sql.Connection;\r\nimport java.sql.DriverManager;\r\n\r\npublic class Main\r\n{\r\n    private static final String URL = \"jdbc:sqlserver://localhost;instanceName=Naja;portNumber=1433;databaseName=sample\";\r\n    private static final String USERNAME = \"sa\"; // replace with your username\r\n    private static final String PASSWORD = \"9876\"; // replace with your password\r\n\r\n\r\n    public static Connection getConnection() throws Exception {\r\n        Connection conn = null;\r\n        Class.forName(\"com.microsoft.sqlserver.jdbc.SQLServerDriver\");\r\n        conn = DriverManager.getConnection(URL, USERNAME, PASSWORD);\r\n        System.out.println(\"Connected to the database.\");\r\n        return conn;\r\n    }\r\n\r\n\r\n    public static void main(String args []) throws Exception{\r\n        System.out.println(\"start\");\r\n        //Connection conn = getConnection();\r\n\r\n\r\n        EventLogDao dao = new EventlogDaoImpl(); //Den her connector også og så er der ikke behov for ovenstående connection.\r\n\r\n        dao.readEventLog(\"\");\r\n\r\n        EventLog eventLog = new EventLog(\"\",\"\",\"\");\r\n        dao.createEventLog(eventLog);\r\n\r\n        dao.readAllEventLogs();\r\n\r\n        System.out.println(\"slut\");\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/org/example/Main.java b/src/main/java/org/example/Main.java
+--- a/src/main/java/org/example/Main.java	(revision b725ae1e4feefc5e00ca7d0ab30777510ab40c94)
++++ b/src/main/java/org/example/Main.java	(date 1730279543989)
+@@ -8,19 +8,6 @@
+ 
+ public class Main
+ {
+-    private static final String URL = "jdbc:sqlserver://localhost;instanceName=Naja;portNumber=1433;databaseName=sample";
+-    private static final String USERNAME = "sa"; // replace with your username
+-    private static final String PASSWORD = "9876"; // replace with your password
+-
+-
+-    public static Connection getConnection() throws Exception {
+-        Connection conn = null;
+-        Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+-        conn = DriverManager.getConnection(URL, USERNAME, PASSWORD);
+-        System.out.println("Connected to the database.");
+-        return conn;
+-    }
+-
+ 
+     public static void main(String args []) throws Exception{
+         System.out.println("start");

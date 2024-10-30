@@ -1,0 +1,70 @@
+Index: src/main/java/org/example/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package org.example;\r\nimport org.example.EventLog.EventLog;\r\nimport org.example.EventLog.EventLogDao;\r\nimport org.example.EventLog.EventlogDaoImpl;\r\n\r\nimport java.sql.Connection;\r\nimport java.sql.DriverManager;\r\n\r\npublic class Main\r\n{\r\n    private static final String URL = \"jdbc:sqlserver://localhost;instanceName=Naja;portNumber=1433;databaseName=sample\";\r\n    private static final String USERNAME = \"sa\"; // replace with your username\r\n    private static final String PASSWORD = \"9876\"; // replace with your password\r\n\r\n\r\n    public static Connection getConnection() throws Exception {\r\n        Connection conn = null;\r\n        Class.forName(\"com.microsoft.sqlserver.jdbc.SQLServerDriver\");\r\n        conn = DriverManager.getConnection(URL, USERNAME, PASSWORD);\r\n        System.out.println(\"Connected to the database.\");\r\n        return conn;\r\n    }\r\n\r\n\r\n    public static void main(String args []) throws Exception{\r\n        System.out.println(\"start\");\r\n        //Connection conn = getConnection();\r\n\r\n\r\n        EventLogDao dao = new EventlogDaoImpl(); //Den her connector også og så er der ikke behov for ovenstående connection.\r\n\r\n        dao.readEventLog(\"\");\r\n\r\n        EventLog eventLog = new EventLog(\"\",\"\",\"\");\r\n        dao.createEventLog(eventLog);\r\n\r\n        dao.readAllEventLogs();\r\n\r\n        System.out.println(\"slut\");\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/org/example/Main.java b/src/main/java/org/example/Main.java
+--- a/src/main/java/org/example/Main.java	(revision b725ae1e4feefc5e00ca7d0ab30777510ab40c94)
++++ b/src/main/java/org/example/Main.java	(date 1730279159120)
+@@ -8,7 +8,7 @@
+ 
+ public class Main
+ {
+-    private static final String URL = "jdbc:sqlserver://localhost;instanceName=Naja;portNumber=1433;databaseName=sample";
++    private static final String URL = "jdbc:sqlserver://localhost;instanceName=Naja;portNumber=1433;databaseName=dbHundePension";
+     private static final String USERNAME = "sa"; // replace with your username
+     private static final String PASSWORD = "9876"; // replace with your password
+ 
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"ab50fa1a-5ab7-4c82-8295-a69b4117a142\" name=\"Changes\" comment=\"\">\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/uiDesigner.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/dataSources/a8d6fa57-d69a-442e-b7cb-f43473ea892b.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/dataSources/a8d6fa57-d69a-442e-b7cb-f43473ea892b.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/dataSources/a8d6fa57-d69a-442e-b7cb-f43473ea892b/storage_v2/_src_/database/dbHundePension.ShP41w/schema/dbo.sYMBAA.meta\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/dataSources/a8d6fa57-d69a-442e-b7cb-f43473ea892b/storage_v2/_src_/database/dbHundePension.ShP41w/schema/dbo.sYMBAA.meta\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/dataSources/a8d6fa57-d69a-442e-b7cb-f43473ea892b/storage_v2/_src_/database/dbHundePension.ShP41w/schema/dbo.sYMBAA.zip\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/dataSources/a8d6fa57-d69a-442e-b7cb-f43473ea892b/storage_v2/_src_/database/dbHundePension.ShP41w/schema/dbo.sYMBAA.zip\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/org/example/Main.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/org/example/Main.java\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Interface\" />\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <favorite-branches>\r\n      <branch-storage>\r\n        <map>\r\n          <entry type=\"LOCAL\">\r\n            <value>\r\n              <list>\r\n                <branch-info repo=\"$PROJECT_DIR$\" source=\"Owner\" />\r\n                <branch-info repo=\"$PROJECT_DIR$\" source=\"City\" />\r\n              </list>\r\n            </value>\r\n          </entry>\r\n        </map>\r\n      </branch-storage>\r\n    </favorite-branches>\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"City\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\">{\r\n  &quot;lastFilter&quot;: {\r\n    &quot;state&quot;: &quot;OPEN&quot;,\r\n    &quot;assignee&quot;: &quot;TobiasFalck&quot;\r\n  }\r\n}</component>\r\n  <component name=\"GithubPullRequestsUISettings\">{\r\n  &quot;selectedUrlAndAccountId&quot;: {\r\n    &quot;url&quot;: &quot;https://github.com/TobiasFalck/HundePension.git&quot;,\r\n    &quot;accountId&quot;: &quot;a213199c-b179-498f-bfcb-a417454497b8&quot;\r\n  }\r\n}</component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 5\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2o6gR2dEXNCOxx9vgb8kt75Sbpq\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,\r\n    &quot;git-widget-placeholder&quot;: &quot;EventLog&quot;,\r\n    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,\r\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,\r\n    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/Champ/IdeaProjects/HundePension/src/main/java/org/example/Main.java&quot;,\r\n    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,\r\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\r\n  },\r\n  &quot;keyToStringList&quot;: {\r\n    &quot;DatabaseDriversLRU&quot;: [\r\n      &quot;sqlserver&quot;\r\n    ]\r\n  }\r\n}</component>\r\n  <component name=\"SharedIndexes\">\r\n    <attachedChunks>\r\n      <set>\r\n        <option value=\"bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.21829.142\" />\r\n        <option value=\"bundled-js-predefined-d6986cc7102b-7c0b70fcd90d-JavaScript-IU-242.21829.142\" />\r\n      </set>\r\n    </attachedChunks>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"ab50fa1a-5ab7-4c82-8295-a69b4117a142\" name=\"Changes\" comment=\"\" />\r\n      <created>1730195429574</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1730195429574</updated>\r\n      <workItem from=\"1730195430644\" duration=\"1202000\" />\r\n      <workItem from=\"1730200762812\" duration=\"10317000\" />\r\n    </task>\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision b725ae1e4feefc5e00ca7d0ab30777510ab40c94)
++++ b/.idea/workspace.xml	(date 1730279159452)
+@@ -4,12 +4,7 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="ab50fa1a-5ab7-4c82-8295-a69b4117a142" name="Changes" comment="">
+-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a8d6fa57-d69a-442e-b7cb-f43473ea892b.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a8d6fa57-d69a-442e-b7cb-f43473ea892b.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a8d6fa57-d69a-442e-b7cb-f43473ea892b/storage_v2/_src_/database/dbHundePension.ShP41w/schema/dbo.sYMBAA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a8d6fa57-d69a-442e-b7cb-f43473ea892b/storage_v2/_src_/database/dbHundePension.ShP41w/schema/dbo.sYMBAA.meta" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a8d6fa57-d69a-442e-b7cb-f43473ea892b/storage_v2/_src_/database/dbHundePension.ShP41w/schema/dbo.sYMBAA.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a8d6fa57-d69a-442e-b7cb-f43473ea892b/storage_v2/_src_/database/dbHundePension.ShP41w/schema/dbo.sYMBAA.zip" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++    <list default="true" id="ab50fa1a-5ab7-4c82-8295-a69b4117a142" name="Changes" comment="Eventlog, EventlogDao og EventlogDaoImpl&#10;Impl har en masse røde streger og dertil skal main også rettes til">
+       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+@@ -106,11 +101,24 @@
+       <option name="presentableId" value="Default" />
+       <updated>1730195429574</updated>
+       <workItem from="1730195430644" duration="1202000" />
+-      <workItem from="1730200762812" duration="10317000" />
++      <workItem from="1730200762812" duration="10814000" />
++    </task>
++    <task id="LOCAL-00001" summary="Eventlog, EventlogDao og EventlogDaoImpl&#10;Impl har en masse røde streger og dertil skal main også rettes til">
++      <option name="closed" value="true" />
++      <created>1730278797777</created>
++      <option name="number" value="00001" />
++      <option name="presentableId" value="LOCAL-00001" />
++      <option name="project" value="LOCAL" />
++      <updated>1730278797777</updated>
+     </task>
++    <option name="localTasksCounter" value="2" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+     <option name="version" value="3" />
+   </component>
++  <component name="VcsManagerConfiguration">
++    <MESSAGE value="Eventlog, EventlogDao og EventlogDaoImpl&#10;Impl har en masse røde streger og dertil skal main også rettes til" />
++    <option name="LAST_COMMIT_MESSAGE" value="Eventlog, EventlogDao og EventlogDaoImpl&#10;Impl har en masse røde streger og dertil skal main også rettes til" />
++  </component>
+ </project>
+\ No newline at end of file
