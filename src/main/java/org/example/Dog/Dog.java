@@ -6,10 +6,11 @@ public class Dog
 {
     private String name;
     private String breed;
-    private Date birthday;
+    private String birthday;
 
 
-    public Dog(String name, String breed, Date birthday)
+
+    public Dog(String name, String breed, String birthday)
     {
         this.name = name;
         this.breed = breed;
@@ -41,12 +42,12 @@ public class Dog
         this.breed = breed;
     }
 
-    public Date getBirthday()
+    public String getBirthday()
     {
         return birthday;
     }
 
-    public void setBirthday(Date birthday)
+    public void setBirthday(String birthday)
     {
         this.birthday = birthday;
     }

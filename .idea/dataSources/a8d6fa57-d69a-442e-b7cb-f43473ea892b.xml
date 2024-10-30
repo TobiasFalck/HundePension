@@ -16874,83 +16874,83 @@
       <DefaultGroup>1</DefaultGroup>
       <ObjectId>1</ObjectId>
     </filegroup>
-    <role id="5575" parent="5521" name="public">
-      <AuthType>none</AuthType>
-      <ObjectId>0</ObjectId>
-      <Type>database-role</Type>
-      <OwnerId>1</OwnerId>
-    </role>
-    <role id="5576" parent="5521" name="dbo">
-      <AuthType>instance</AuthType>
-      <DefaultSchema>dbo</DefaultSchema>
-      <ObjectId>1</ObjectId>
-    </role>
-    <role id="5577" parent="5521" name="guest">
-      <AuthType>none</AuthType>
-      <DefaultSchema>guest</DefaultSchema>
-      <ObjectId>2</ObjectId>
-    </role>
-    <role id="5578" parent="5521" name="INFORMATION_SCHEMA">
+    <role id="5575" parent="5521" name="INFORMATION_SCHEMA">
       <AuthType>none</AuthType>
       <ObjectId>3</ObjectId>
     </role>
-    <role id="5579" parent="5521" name="sys">
-      <AuthType>none</AuthType>
-      <ObjectId>4</ObjectId>
-    </role>
-    <role id="5580" parent="5521" name="db_owner">
-      <AuthType>none</AuthType>
-      <ObjectId>16384</ObjectId>
-      <Type>database-role</Type>
-      <OwnerId>1</OwnerId>
-    </role>
-    <role id="5581" parent="5521" name="db_accessadmin">
+    <role id="5576" parent="5521" name="db_accessadmin">
       <AuthType>none</AuthType>
       <ObjectId>16385</ObjectId>
       <Type>database-role</Type>
       <OwnerId>1</OwnerId>
     </role>
-    <role id="5582" parent="5521" name="db_securityadmin">
-      <AuthType>none</AuthType>
-      <ObjectId>16386</ObjectId>
-      <Type>database-role</Type>
-      <OwnerId>1</OwnerId>
-    </role>
-    <role id="5583" parent="5521" name="db_ddladmin">
-      <AuthType>none</AuthType>
-      <ObjectId>16387</ObjectId>
-      <Type>database-role</Type>
-      <OwnerId>1</OwnerId>
-    </role>
-    <role id="5584" parent="5521" name="db_backupoperator">
+    <role id="5577" parent="5521" name="db_backupoperator">
       <AuthType>none</AuthType>
       <ObjectId>16389</ObjectId>
       <Type>database-role</Type>
       <OwnerId>1</OwnerId>
     </role>
-    <role id="5585" parent="5521" name="db_datareader">
+    <role id="5578" parent="5521" name="db_datareader">
       <AuthType>none</AuthType>
       <ObjectId>16390</ObjectId>
       <Type>database-role</Type>
       <OwnerId>1</OwnerId>
     </role>
-    <role id="5586" parent="5521" name="db_datawriter">
+    <role id="5579" parent="5521" name="db_datawriter">
       <AuthType>none</AuthType>
       <ObjectId>16391</ObjectId>
       <Type>database-role</Type>
       <OwnerId>1</OwnerId>
     </role>
-    <role id="5587" parent="5521" name="db_denydatareader">
+    <role id="5580" parent="5521" name="db_ddladmin">
+      <AuthType>none</AuthType>
+      <ObjectId>16387</ObjectId>
+      <Type>database-role</Type>
+      <OwnerId>1</OwnerId>
+    </role>
+    <role id="5581" parent="5521" name="db_denydatareader">
       <AuthType>none</AuthType>
       <ObjectId>16392</ObjectId>
       <Type>database-role</Type>
       <OwnerId>1</OwnerId>
     </role>
-    <role id="5588" parent="5521" name="db_denydatawriter">
+    <role id="5582" parent="5521" name="db_denydatawriter">
       <AuthType>none</AuthType>
       <ObjectId>16393</ObjectId>
       <Type>database-role</Type>
       <OwnerId>1</OwnerId>
+    </role>
+    <role id="5583" parent="5521" name="db_owner">
+      <AuthType>none</AuthType>
+      <ObjectId>16384</ObjectId>
+      <Type>database-role</Type>
+      <OwnerId>1</OwnerId>
+    </role>
+    <role id="5584" parent="5521" name="db_securityadmin">
+      <AuthType>none</AuthType>
+      <ObjectId>16386</ObjectId>
+      <Type>database-role</Type>
+      <OwnerId>1</OwnerId>
+    </role>
+    <role id="5585" parent="5521" name="dbo">
+      <AuthType>instance</AuthType>
+      <DefaultSchema>dbo</DefaultSchema>
+      <ObjectId>1</ObjectId>
+    </role>
+    <role id="5586" parent="5521" name="guest">
+      <AuthType>none</AuthType>
+      <DefaultSchema>guest</DefaultSchema>
+      <ObjectId>2</ObjectId>
+    </role>
+    <role id="5587" parent="5521" name="public">
+      <AuthType>none</AuthType>
+      <ObjectId>0</ObjectId>
+      <Type>database-role</Type>
+      <OwnerId>1</OwnerId>
+    </role>
+    <role id="5588" parent="5521" name="sys">
+      <AuthType>none</AuthType>
+      <ObjectId>4</ObjectId>
     </role>
     <schema id="5589" parent="5521" name="INFORMATION_SCHEMA">
       <ObjectId>3</ObjectId>
@@ -16999,8 +16999,8 @@
 1189579276|||2|execute|D
 1205579333|||0|execute|G
 1205579333|||2|execute|D</Grants>
-      <IntrospectionTimestamp>2024-10-29.11:53:13.147</IntrospectionTimestamp>
-      <LastIntrospectionLocalTimestamp>2024-10-29.09:53:13</LastIntrospectionLocalTimestamp>
+      <IntrospectionTimestamp>2024-10-30.10:53:34.397</IntrospectionTimestamp>
+      <LastIntrospectionLocalTimestamp>2024-10-30.08:53:34</LastIntrospectionLocalTimestamp>
       <ObjectId>1</ObjectId>
       <PermissionsCheckSum>13849551553</PermissionsCheckSum>
     </schema>
@@ -17110,7 +17110,7 @@ int</ExtendedProperties>
     <table id="5612" parent="5599" name="tblEjer">
       <CreatedTimestamp>2024-10-29.11:19:17.773</CreatedTimestamp>
       <DataRetentionPeriod>-1</DataRetentionPeriod>
-      <ModifiedTimestamp>2024-10-29.11:19:18.400</ModifiedTimestamp>
+      <ModifiedTimestamp>2024-10-30.10:49:57.093</ModifiedTimestamp>
       <ObjectId>322100188</ObjectId>
       <LobDataSpaceId>0</LobDataSpaceId>
     </table>
@@ -17136,16 +17136,16 @@ int</ExtendedProperties>
       <LobDataSpaceId>0</LobDataSpaceId>
     </table>
     <table id="5616" parent="5599" name="tblHundeOpl">
-      <CreatedTimestamp>2024-10-29.11:17:07.750</CreatedTimestamp>
+      <CreatedTimestamp>2024-10-30.10:49:56.267</CreatedTimestamp>
       <DataRetentionPeriod>-1</DataRetentionPeriod>
-      <ModifiedTimestamp>2024-10-29.11:19:18.403</ModifiedTimestamp>
-      <ObjectId>98099390</ObjectId>
+      <ModifiedTimestamp>2024-10-30.10:49:57.390</ModifiedTimestamp>
+      <ObjectId>386100416</ObjectId>
       <LobDataSpaceId>0</LobDataSpaceId>
     </table>
     <table id="5617" parent="5599" name="tblLavOphold">
       <CreatedTimestamp>2024-10-29.11:16:34.663</CreatedTimestamp>
       <DataRetentionPeriod>-1</DataRetentionPeriod>
-      <ModifiedTimestamp>2024-10-29.11:18:53.697</ModifiedTimestamp>
+      <ModifiedTimestamp>2024-10-30.10:49:57.393</ModifiedTimestamp>
       <ObjectId>18099105</ObjectId>
       <LobDataSpaceId>0</LobDataSpaceId>
     </table>
@@ -17307,7 +17307,7 @@ name</ColNames>
     <column id="5649" parent="5612" name="fldEjerId">
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <SequenceIdentity>1</SequenceIdentity>
+      <SequenceIdentity>1(2)</SequenceIdentity>
       <StoredType>int|0s</StoredType>
     </column>
     <column id="5650" parent="5612" name="fldNavn">
@@ -17452,33 +17452,33 @@ name</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>PK_tblHaendelsesType</UnderlyingIndexName>
     </key>
-    <column id="5674" parent="5616" name="fldHundeId">
-      <NotNull>1</NotNull>
+    <column id="5674" parent="5616" name="fldNavn">
       <Position>1</Position>
-      <SequenceIdentity>1</SequenceIdentity>
-      <StoredType>int|0s</StoredType>
-    </column>
-    <column id="5675" parent="5616" name="fldEjerId">
-      <Position>2</Position>
-      <StoredType>int|0s</StoredType>
-    </column>
-    <column id="5676" parent="5616" name="fldNavn">
-      <Position>3</Position>
       <StoredType>nchar(50 char)|0s</StoredType>
     </column>
-    <column id="5677" parent="5616" name="fldFoedselsDato">
-      <Position>4</Position>
-      <StoredType>date|0s</StoredType>
-    </column>
-    <column id="5678" parent="5616" name="fldRace">
-      <Position>5</Position>
+    <column id="5675" parent="5616" name="fldRace">
+      <Position>2</Position>
       <StoredType>nchar(30 char)|0s</StoredType>
+    </column>
+    <column id="5676" parent="5616" name="fldFoedselsDato">
+      <Position>3</Position>
+      <StoredType>nchar(20 char)|0s</StoredType>
+    </column>
+    <column id="5677" parent="5616" name="fldEjerId">
+      <Position>4</Position>
+      <StoredType>int|0s</StoredType>
+    </column>
+    <column id="5678" parent="5616" name="fldHundeId">
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+      <SequenceIdentity>1(2)</SequenceIdentity>
+      <StoredType>int|0s</StoredType>
     </column>
     <foreign-key id="5679" parent="5616" name="FK_tblHundeOpl_tblEjer">
       <ColNames>fldEjerId</ColNames>
-      <CreatedTimestamp>2024-10-29.11:19:18.400</CreatedTimestamp>
-      <ModifiedTimestamp>2024-10-29.11:19:18.400</ModifiedTimestamp>
-      <ObjectId>370100359</ObjectId>
+      <CreatedTimestamp>2024-10-30.10:49:57.093</CreatedTimestamp>
+      <ModifiedTimestamp>2024-10-30.10:49:57.093</ModifiedTimestamp>
+      <ObjectId>418100530</ObjectId>
       <RefColNames>fldEjerId</RefColNames>
       <RefTableId>322100188</RefTableId>
       <RefTableName>tblEjer</RefTableName>
@@ -17491,9 +17491,9 @@ name</ColNames>
       <PartitionDataSpaceId>1</PartitionDataSpaceId>
     </index>
     <key id="5681" parent="5616" name="PK_tblHundeOpl">
-      <CreatedTimestamp>2024-10-29.11:17:08.223</CreatedTimestamp>
-      <ModifiedTimestamp>2024-10-29.11:17:08.223</ModifiedTimestamp>
-      <ObjectId>114099447</ObjectId>
+      <CreatedTimestamp>2024-10-30.10:49:57.090</CreatedTimestamp>
+      <ModifiedTimestamp>2024-10-30.10:49:57.090</ModifiedTimestamp>
+      <ObjectId>402100473</ObjectId>
       <Primary>1</Primary>
       <UnderlyingIndexName>PK_tblHundeOpl</UnderlyingIndexName>
     </key>
@@ -17537,11 +17537,11 @@ name</ColNames>
     </column>
     <foreign-key id="5691" parent="5617" name="FK_tblLavOphold_tblHundeOpl">
       <ColNames>fldHundeId</ColNames>
-      <CreatedTimestamp>2024-10-29.11:17:08.377</CreatedTimestamp>
-      <ModifiedTimestamp>2024-10-29.11:17:08.377</ModifiedTimestamp>
-      <ObjectId>146099561</ObjectId>
+      <CreatedTimestamp>2024-10-30.10:49:57.390</CreatedTimestamp>
+      <ModifiedTimestamp>2024-10-30.10:49:57.390</ModifiedTimestamp>
+      <ObjectId>434100587</ObjectId>
       <RefColNames>fldHundeId</RefColNames>
-      <RefTableId>98099390</RefTableId>
+      <RefTableId>386100416</RefTableId>
       <RefTableName>tblHundeOpl</RefTableName>
     </foreign-key>
     <foreign-key id="5692" parent="5617" name="FK_tblLavOphold_tblFoder">
