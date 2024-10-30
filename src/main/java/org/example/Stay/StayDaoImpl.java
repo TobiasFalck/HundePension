@@ -57,12 +57,7 @@ public class StayDaoImpl implements StayDao {
     }
 
     @Override
-    public void readAllStay() throws Exception {
-
-    }
-
-    @Override
-    public void readAlltblLavOphold() throws Exception{
+    public void readAllStay() throws Exception{
         String sql = "SELECT * FROM tblLavOphold";
         Connection conn = getConnection();
         PreparedStatement pstmt = conn.prepareStatement(sql);
