@@ -9,12 +9,9 @@ import java.sql.DriverManager;
 
 public class Main
 {
-
-
     public static void main(String[] args) throws Exception
     {
     System.out.println("start");
-
 
 
     DogDao dao = new DogDaoImpl();

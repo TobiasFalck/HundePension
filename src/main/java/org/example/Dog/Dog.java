@@ -1,6 +1,6 @@
 package org.example.Dog;
 
-import java.util.Date;
+
 
 public class Dog
 {
@@ -19,7 +19,7 @@ public class Dog
 
     public Dog()
     {
-        // What doing - Er den overhovedet relevant
+
     }
 
     public String getName()

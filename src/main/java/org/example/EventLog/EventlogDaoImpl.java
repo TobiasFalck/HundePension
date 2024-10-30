@@ -4,9 +4,9 @@ import java.sql.*;
 
 public class EventlogDaoImpl implements EventLogDao {
 
-    private static final String URL = "jdbc:sqlserver://localhost;instanceName=Naja;portNumber=1433;databaseName=sample";
+    private static final String URL = "jdbc:sqlserver://localhost;portNumber=1433;databaseName=dbHundePension";
     private static final String USERNAME = "sa"; // replace with your username
-    private static final String PASSWORD = "9876"; // replace with your password
+    private static final String PASSWORD = "123456"; // replace with your password
 
     public static Connection getConnection() throws Exception {
         Connection conn = null;
@@ -17,8 +17,8 @@ public class EventlogDaoImpl implements EventLogDao {
     }
 
     @Override //Annotering, noget man tilføjer man overstyrer ovenstående
-    public void createEventlog(Eventlog eventlog) throws Exception {
-        String sql = "INSERT INTO Eventlog VALUES (?, ?, ?)";
+    public void createEventLog(EventLog eventlog) throws Exception {
+        String sql = "INSERT INTO tblHaendelsesLog VALUES (?, ?, ?)";
         Connection conn = getConnection();
         PreparedStatement pstmt = conn.prepareStatement(sql);
         pstmt.setString(1, eventlog.getDescription());
@@ -33,14 +33,14 @@ public class EventlogDaoImpl implements EventLogDao {
     }
 
     @Override
-    public void readEventlog(String no) throws Exception{
-        String sql = "SELECT * FROM Eventlog WHERE dept_no = ?";
+    public void readEventLog(String no) throws Exception{
+        String sql = "SELECT * FROM tblHaendelsesLog WHERE fldHaendelseId = ?";
         Connection conn = getConnection();
         PreparedStatement pstmt = conn.prepareStatement(sql);
         pstmt.setString(1, no);
         ResultSet rs = pstmt.executeQuery();
         if (rs.next()) {
-            Eventlog eventlog = new Eventlog();
+            EventLog eventlog = new EventLog();
             eventlog.setDescription(rs.getString(1));
             eventlog.setHealth(rs.getString(2));
             //department.setLocation(rs.getString(3));
@@ -51,8 +51,8 @@ public class EventlogDaoImpl implements EventLogDao {
     }
 
     @Override
-    public void readAllEventlogs() throws Exception{
-        String sql = "SELECT * FROM Eventlog";
+    public void readAllEventLogs() throws Exception{
+        String sql = "SELECT * FROM tblHaendelsesLog";
         Connection conn = getConnection();
         PreparedStatement pstmt = conn.prepareStatement(sql);
         ResultSet rs = pstmt.executeQuery();
@@ -60,8 +60,8 @@ public class EventlogDaoImpl implements EventLogDao {
         while (rs.next()) {
             hasEventlogs = true;
             EventLog eventLog = new EventLog();
-            EventLog.setDescription(rs.getString(1));
-            EventLog.setHealth(rs.getString(2));
+            eventLog.setDescription(rs.getString(1));
+            eventLog.setHealth(rs.getString(2));
             //department.setLocation(rs.getString(3));
             System.out.println(eventLog.getDescription()+" "+ eventLog.getHealth());
         }

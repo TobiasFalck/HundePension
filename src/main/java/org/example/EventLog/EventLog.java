@@ -13,19 +13,23 @@ public class EventLog {
         //What doing?
     }
 
-    public String getDescription() {
+    public String getDescription()
+    {
         return description;
     }
 
-    public void setDescription(String description) {
+    public void setDescription(String description)
+    {
         this.description = description;
     }
 
-    public String getHealth() {
+    public String getHealth()
+    {
         return health;
     }
 
-    public void setHealth(String health) {
+    public void setHealth(String health)
+    {
         this.health = health;
     }
 }

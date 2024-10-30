@@ -1,0 +1,127 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"ab50fa1a-5ab7-4c82-8295-a69b4117a142\" name=\"Changes\" comment=\"Dog Class + alot of errors\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/dataSources/a8d6fa57-d69a-442e-b7cb-f43473ea892b.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/dataSources/a8d6fa57-d69a-442e-b7cb-f43473ea892b.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/org/example/Dog/Dog.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/org/example/Dog/Dog.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/org/example/Dog/DogDao.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/org/example/Dog/DogDao.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/org/example/Dog/DogDaoImpl.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/org/example/Dog/DogDaoImpl.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/org/example/EventType/EventType.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/org/example/EventType/EventType.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/org/example/Main.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/org/example/Main.java\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Interface\" />\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"master\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\">{\r\n  &quot;lastFilter&quot;: {\r\n    &quot;state&quot;: &quot;OPEN&quot;,\r\n    &quot;assignee&quot;: &quot;TobiasFalck&quot;\r\n  }\r\n}</component>\r\n  <component name=\"GithubPullRequestsUISettings\">{\r\n  &quot;selectedUrlAndAccountId&quot;: {\r\n    &quot;url&quot;: &quot;https://github.com/TobiasFalck/HundePension.git&quot;,\r\n    &quot;accountId&quot;: &quot;fd1338ce-02a7-49a4-9b16-8f6f33b56500&quot;\r\n  }\r\n}</component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 5\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2o6gR2dEXNCOxx9vgb8kt75Sbpq\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\r\n    <ConfirmationsSetting value=\"1\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;Application.Main.executor&quot;: &quot;Run&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,\r\n    &quot;git-widget-placeholder&quot;: &quot;EventType&quot;,\r\n    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,\r\n    &quot;last_opened_file_path&quot;: &quot;C:/Users/Champ/OneDrive/Desktop/IntelliJ Extra/sqljdbc4.jar&quot;,\r\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,\r\n    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/Champ/IdeaProjects/HundePension/src/main/java/org/example/Main.java&quot;,\r\n    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,\r\n    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,\r\n    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,\r\n    &quot;settings.editor.selected.configurable&quot;: &quot;database.data.views.appearance&quot;,\r\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\r\n  },\r\n  &quot;keyToStringList&quot;: {\r\n    &quot;DatabaseDriversLRU&quot;: [\r\n      &quot;sqlserver&quot;\r\n    ]\r\n  }\r\n}</component>\r\n  <component name=\"SharedIndexes\">\r\n    <attachedChunks>\r\n      <set>\r\n        <option value=\"bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.21829.142\" />\r\n        <option value=\"bundled-js-predefined-d6986cc7102b-7c0b70fcd90d-JavaScript-IU-242.21829.142\" />\r\n      </set>\r\n    </attachedChunks>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"ab50fa1a-5ab7-4c82-8295-a69b4117a142\" name=\"Changes\" comment=\"\" />\r\n      <created>1730195429574</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1730195429574</updated>\r\n      <workItem from=\"1730195430644\" duration=\"11048000\" />\r\n      <workItem from=\"1730278277871\" duration=\"522000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"First\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1730196665882</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1730196665882</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Dog Class + alot of errors\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1730205061286</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1730205061286</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"3\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"First\" />\r\n    <MESSAGE value=\"Dog Class + alot of errors\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Dog Class + alot of errors\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision bf245f205642f39adb8f5c5e490a98bd5fce6514)
++++ b/.idea/workspace.xml	(date 1730279582210)
+@@ -4,14 +4,8 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="ab50fa1a-5ab7-4c82-8295-a69b4117a142" name="Changes" comment="Dog Class + alot of errors">
+-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a8d6fa57-d69a-442e-b7cb-f43473ea892b.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a8d6fa57-d69a-442e-b7cb-f43473ea892b.xml" afterDir="false" />
++    <list default="true" id="ab50fa1a-5ab7-4c82-8295-a69b4117a142" name="Changes" comment="Updating Master + merge">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Dog/Dog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Dog/Dog.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Dog/DogDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Dog/DogDao.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Dog/DogDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Dog/DogDaoImpl.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/EventType/EventType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/EventType/EventType.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -29,7 +23,7 @@
+   <component name="Git.Settings">
+     <option name="RECENT_BRANCH_BY_REPOSITORY">
+       <map>
+-        <entry key="$PROJECT_DIR$" value="master" />
++        <entry key="$PROJECT_DIR$" value="EventType" />
+       </map>
+     </option>
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+@@ -57,32 +51,32 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent">{
+-  &quot;keyToString&quot;: {
+-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+-    &quot;git-widget-placeholder&quot;: &quot;EventType&quot;,
+-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Champ/OneDrive/Desktop/IntelliJ Extra/sqljdbc4.jar&quot;,
+-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/Champ/IdeaProjects/HundePension/src/main/java/org/example/Main.java&quot;,
+-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+-    &quot;settings.editor.selected.configurable&quot;: &quot;database.data.views.appearance&quot;,
+-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
++  <component name="PropertiesComponent"><![CDATA[{
++  "keyToString": {
++    "Application.Main.executor": "Run",
++    "RunOnceActivity.ShowReadmeOnStart": "true",
++    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
++    "git-widget-placeholder": "master",
++    "kotlin-language-version-configured": "true",
++    "last_opened_file_path": "C:/Users/Champ/OneDrive/Desktop/IntelliJ Extra/sqljdbc4.jar",
++    "node.js.detected.package.eslint": "true",
++    "node.js.detected.package.tslint": "true",
++    "node.js.selected.package.eslint": "(autodetect)",
++    "node.js.selected.package.tslint": "(autodetect)",
++    "nodejs_package_manager_path": "npm",
++    "onboarding.tips.debug.path": "C:/Users/Champ/IdeaProjects/HundePension/src/main/java/org/example/Main.java",
++    "project.structure.last.edited": "Libraries",
++    "project.structure.proportion": "0.0",
++    "project.structure.side.proportion": "0.0",
++    "settings.editor.selected.configurable": "database.data.views.appearance",
++    "vue.rearranger.settings.migration": "true"
+   },
+-  &quot;keyToStringList&quot;: {
+-    &quot;DatabaseDriversLRU&quot;: [
+-      &quot;sqlserver&quot;
++  "keyToStringList": {
++    "DatabaseDriversLRU": [
++      "sqlserver"
+     ]
+   }
+-}</component>
++}]]></component>
+   <component name="SharedIndexes">
+     <attachedChunks>
+       <set>
+@@ -100,7 +94,7 @@
+       <option name="presentableId" value="Default" />
+       <updated>1730195429574</updated>
+       <workItem from="1730195430644" duration="11048000" />
+-      <workItem from="1730278277871" duration="522000" />
++      <workItem from="1730278277871" duration="1286000" />
+     </task>
+     <task id="LOCAL-00001" summary="First">
+       <option name="closed" value="true" />
+@@ -118,7 +112,15 @@
+       <option name="project" value="LOCAL" />
+       <updated>1730205061286</updated>
+     </task>
+-    <option name="localTasksCounter" value="3" />
++    <task id="LOCAL-00003" summary="Updating Master + merge">
++      <option name="closed" value="true" />
++      <created>1730279112890</created>
++      <option name="number" value="00003" />
++      <option name="presentableId" value="LOCAL-00003" />
++      <option name="project" value="LOCAL" />
++      <updated>1730279112890</updated>
++    </task>
++    <option name="localTasksCounter" value="4" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -127,6 +129,7 @@
+   <component name="VcsManagerConfiguration">
+     <MESSAGE value="First" />
+     <MESSAGE value="Dog Class + alot of errors" />
+-    <option name="LAST_COMMIT_MESSAGE" value="Dog Class + alot of errors" />
++    <MESSAGE value="Updating Master + merge" />
++    <option name="LAST_COMMIT_MESSAGE" value="Updating Master + merge" />
+   </component>
+ </project>
+\ No newline at end of file

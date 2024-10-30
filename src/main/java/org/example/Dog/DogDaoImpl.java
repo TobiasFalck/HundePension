@@ -52,7 +52,7 @@ public class DogDaoImpl implements DogDao {
 
     @Override
     public void readAllDogs() throws Exception{
-        String sql = "SELECT * FROM Department";
+        String sql = "SELECT * FROM tblHundeOpl";
         Connection conn = getConnection();
         PreparedStatement pstmt = conn.prepareStatement(sql);
         ResultSet rs = pstmt.executeQuery();
