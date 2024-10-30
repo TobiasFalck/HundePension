@@ -16607,7 +16607,7 @@
     </database>
     <database id="5521" parent="1" name="dbHundePension">
       <Current>1</Current>
-      <Fingerprint>24.45592/F41E602E-1D0B-4211-B7F4-5ECC3AE24B96@Naja</Fingerprint>
+      <Fingerprint>27.45592/37F59BAD-2247-4378-9C4F-A61E316C73DC@TobiasLaptop</Fingerprint>
       <Grants>27|database||1|connect|G
 27|database||0|view any column encryption key definition|G
 27|database||0|view any column master key definition|G</Grants>
@@ -16984,25 +16984,25 @@
     </schema>
     <schema id="5599" parent="5521" name="dbo">
       <Current>1</Current>
-      <DescriptionsCheckSum>14193113166</DescriptionsCheckSum>
-      <Grants>1317579732|||0|execute|G
-1317579732|||2|execute|D
-1333579789|||0|execute|G
-1333579789|||2|execute|D
-1349579846|||0|execute|G
-1349579846|||2|execute|D
-1365579903|||0|execute|G
-1365579903|||2|execute|D
-1381579960|||0|execute|G
-1381579960|||2|execute|D
-1397580017|||0|execute|G
-1397580017|||2|execute|D
-1413580074|||0|execute|G
-1413580074|||2|execute|D</Grants>
-      <IntrospectionTimestamp>2024-10-30.09:35:34.753</IntrospectionTimestamp>
-      <LastIntrospectionLocalTimestamp>2024-10-30.07:35:34</LastIntrospectionLocalTimestamp>
+      <DescriptionsCheckSum>4961339898</DescriptionsCheckSum>
+      <Grants>1109578991|||0|execute|G
+1109578991|||2|execute|D
+1125579048|||0|execute|G
+1125579048|||2|execute|D
+1141579105|||0|execute|G
+1141579105|||2|execute|D
+1157579162|||0|execute|G
+1157579162|||2|execute|D
+1173579219|||0|execute|G
+1173579219|||2|execute|D
+1189579276|||0|execute|G
+1189579276|||2|execute|D
+1205579333|||0|execute|G
+1205579333|||2|execute|D</Grants>
+      <IntrospectionTimestamp>2024-10-29.11:53:13.147</IntrospectionTimestamp>
+      <LastIntrospectionLocalTimestamp>2024-10-29.09:53:13</LastIntrospectionLocalTimestamp>
       <ObjectId>1</ObjectId>
-      <PermissionsCheckSum>16054814657</PermissionsCheckSum>
+      <PermissionsCheckSum>13849551553</PermissionsCheckSum>
     </schema>
     <schema id="5600" parent="5521" name="guest">
       <ObjectId>2</ObjectId>
@@ -17011,142 +17011,142 @@
       <ObjectId>4</ObjectId>
     </schema>
     <routine id="5602" parent="5599" name="fn_diagramobjects">
-      <CreatedTimestamp>2024-10-29.11:04:45.753</CreatedTimestamp>
+      <CreatedTimestamp>2024-10-29.10:26:43.003</CreatedTimestamp>
       <ExtendedProperties>microsoft_database_tools_support
 1
 int</ExtendedProperties>
-      <ModifiedTimestamp>2024-10-29.11:04:45.753</ModifiedTimestamp>
-      <ObjectId>1413580074</ObjectId>
+      <ModifiedTimestamp>2024-10-29.10:26:43.003</ModifiedTimestamp>
+      <ObjectId>1205579333</ObjectId>
       <RoutineType>scalar-fun</RoutineType>
       <SourceTextLength>1647</SourceTextLength>
     </routine>
     <routine id="5603" parent="5599" name="sp_alterdiagram">
-      <CreatedTimestamp>2024-10-29.11:04:45.750</CreatedTimestamp>
+      <CreatedTimestamp>2024-10-29.10:26:42.993</CreatedTimestamp>
       <ExtendedProperties>microsoft_database_tools_support
 1
 int</ExtendedProperties>
-      <ModifiedTimestamp>2024-10-29.11:04:45.750</ModifiedTimestamp>
-      <ObjectId>1381579960</ObjectId>
+      <ModifiedTimestamp>2024-10-29.10:26:42.993</ModifiedTimestamp>
+      <ObjectId>1173579219</ObjectId>
       <RoutineType>proc</RoutineType>
       <SourceTextLength>1501</SourceTextLength>
     </routine>
     <routine id="5604" parent="5599" name="sp_creatediagram">
-      <CreatedTimestamp>2024-10-29.11:04:45.750</CreatedTimestamp>
+      <CreatedTimestamp>2024-10-29.10:26:42.983</CreatedTimestamp>
       <ExtendedProperties>microsoft_database_tools_support
 1
 int</ExtendedProperties>
-      <ModifiedTimestamp>2024-10-29.11:04:45.750</ModifiedTimestamp>
-      <ObjectId>1349579846</ObjectId>
+      <ModifiedTimestamp>2024-10-29.10:26:42.983</ModifiedTimestamp>
+      <ObjectId>1141579105</ObjectId>
       <RoutineType>proc</RoutineType>
       <SourceTextLength>1223</SourceTextLength>
     </routine>
     <routine id="5605" parent="5599" name="sp_dropdiagram">
-      <CreatedTimestamp>2024-10-29.11:04:45.753</CreatedTimestamp>
+      <CreatedTimestamp>2024-10-29.10:26:43</CreatedTimestamp>
       <ExtendedProperties>microsoft_database_tools_support
 1
 int</ExtendedProperties>
-      <ModifiedTimestamp>2024-10-29.11:04:45.753</ModifiedTimestamp>
-      <ObjectId>1397580017</ObjectId>
+      <ModifiedTimestamp>2024-10-29.10:26:43</ModifiedTimestamp>
+      <ObjectId>1189579276</ObjectId>
       <RoutineType>proc</RoutineType>
       <SourceTextLength>896</SourceTextLength>
     </routine>
     <routine id="5606" parent="5599" name="sp_helpdiagramdefinition">
-      <CreatedTimestamp>2024-10-29.11:04:45.747</CreatedTimestamp>
+      <CreatedTimestamp>2024-10-29.10:26:42.980</CreatedTimestamp>
       <ExtendedProperties>microsoft_database_tools_support
 1
 int</ExtendedProperties>
-      <ModifiedTimestamp>2024-10-29.11:04:45.747</ModifiedTimestamp>
-      <ObjectId>1333579789</ObjectId>
+      <ModifiedTimestamp>2024-10-29.10:26:42.980</ModifiedTimestamp>
+      <ObjectId>1125579048</ObjectId>
       <RoutineType>proc</RoutineType>
       <SourceTextLength>921</SourceTextLength>
     </routine>
     <routine id="5607" parent="5599" name="sp_helpdiagrams">
-      <CreatedTimestamp>2024-10-29.11:04:45.747</CreatedTimestamp>
+      <CreatedTimestamp>2024-10-29.10:26:42.973</CreatedTimestamp>
       <ExtendedProperties>microsoft_database_tools_support
 1
 int</ExtendedProperties>
-      <ModifiedTimestamp>2024-10-29.11:04:45.747</ModifiedTimestamp>
-      <ObjectId>1317579732</ObjectId>
+      <ModifiedTimestamp>2024-10-29.10:26:42.973</ModifiedTimestamp>
+      <ObjectId>1109578991</ObjectId>
       <RoutineType>proc</RoutineType>
       <SourceTextLength>658</SourceTextLength>
     </routine>
     <routine id="5608" parent="5599" name="sp_renamediagram">
-      <CreatedTimestamp>2024-10-29.11:04:45.750</CreatedTimestamp>
+      <CreatedTimestamp>2024-10-29.10:26:42.990</CreatedTimestamp>
       <ExtendedProperties>microsoft_database_tools_support
 1
 int</ExtendedProperties>
-      <ModifiedTimestamp>2024-10-29.11:04:45.750</ModifiedTimestamp>
-      <ObjectId>1365579903</ObjectId>
+      <ModifiedTimestamp>2024-10-29.10:26:42.990</ModifiedTimestamp>
+      <ObjectId>1157579162</ObjectId>
       <RoutineType>proc</RoutineType>
       <SourceTextLength>1721</SourceTextLength>
     </routine>
     <routine id="5609" parent="5599" name="sp_upgraddiagrams">
-      <CreatedTimestamp>2024-10-29.11:04:45.740</CreatedTimestamp>
+      <CreatedTimestamp>2024-10-29.10:26:42.957</CreatedTimestamp>
       <ExtendedProperties>microsoft_database_tools_support
 1
 int</ExtendedProperties>
-      <ModifiedTimestamp>2024-10-29.11:04:45.740</ModifiedTimestamp>
-      <ObjectId>1253579504</ObjectId>
+      <ModifiedTimestamp>2024-10-29.10:26:42.957</ModifiedTimestamp>
+      <ObjectId>1045578763</ObjectId>
       <RoutineType>proc</RoutineType>
       <SourceTextLength>1463</SourceTextLength>
     </routine>
     <table id="5610" parent="5599" name="sysdiagrams">
-      <CreatedTimestamp>2024-10-29.11:04:45.743</CreatedTimestamp>
+      <CreatedTimestamp>2024-10-29.10:26:42.963</CreatedTimestamp>
       <DataRetentionPeriod>-1</DataRetentionPeriod>
       <ExtendedProperties>microsoft_database_tools_support
 1
 int</ExtendedProperties>
-      <ModifiedTimestamp>2024-10-29.11:04:45.743</ModifiedTimestamp>
-      <ObjectId>1269579561</ObjectId>
+      <ModifiedTimestamp>2024-10-29.10:26:42.963</ModifiedTimestamp>
+      <ObjectId>1061578820</ObjectId>
       <LobDataSpaceId>1</LobDataSpaceId>
     </table>
     <table id="5611" parent="5599" name="tblBy">
-      <CreatedTimestamp>2024-10-29.11:06:06.363</CreatedTimestamp>
+      <CreatedTimestamp>2024-10-29.11:06:10.350</CreatedTimestamp>
       <DataRetentionPeriod>-1</DataRetentionPeriod>
-      <ModifiedTimestamp>2024-10-29.11:06:06.530</ModifiedTimestamp>
-      <ObjectId>1429580131</ObjectId>
+      <ModifiedTimestamp>2024-10-29.11:19:18.223</ModifiedTimestamp>
+      <ObjectId>1509580416</ObjectId>
       <LobDataSpaceId>0</LobDataSpaceId>
     </table>
     <table id="5612" parent="5599" name="tblEjer">
-      <CreatedTimestamp>2024-10-29.11:08:20.510</CreatedTimestamp>
+      <CreatedTimestamp>2024-10-29.11:19:17.773</CreatedTimestamp>
       <DataRetentionPeriod>-1</DataRetentionPeriod>
-      <ModifiedTimestamp>2024-10-29.11:08:20.690</ModifiedTimestamp>
-      <ObjectId>1461580245</ObjectId>
+      <ModifiedTimestamp>2024-10-29.11:19:18.400</ModifiedTimestamp>
+      <ObjectId>322100188</ObjectId>
       <LobDataSpaceId>0</LobDataSpaceId>
     </table>
     <table id="5613" parent="5599" name="tblFoder">
-      <CreatedTimestamp>2024-10-29.10:49:22.283</CreatedTimestamp>
+      <CreatedTimestamp>2024-10-29.11:18:53.403</CreatedTimestamp>
       <DataRetentionPeriod>-1</DataRetentionPeriod>
-      <ModifiedTimestamp>2024-10-29.10:49:22.443</ModifiedTimestamp>
-      <ObjectId>1221579390</ObjectId>
+      <ModifiedTimestamp>2024-10-29.11:18:53.683</ModifiedTimestamp>
+      <ObjectId>274100017</ObjectId>
       <LobDataSpaceId>0</LobDataSpaceId>
     </table>
-    <table id="5614" parent="5599" name="tblHaendelsesType">
-      <CreatedTimestamp>2024-10-29.11:13:16.133</CreatedTimestamp>
+    <table id="5614" parent="5599" name="tblHaendelsesLog">
+      <CreatedTimestamp>2024-10-29.11:18:12.193</CreatedTimestamp>
       <DataRetentionPeriod>-1</DataRetentionPeriod>
-      <ModifiedTimestamp>2024-10-29.11:13:16.293</ModifiedTimestamp>
-      <ObjectId>1525580473</ObjectId>
+      <ModifiedTimestamp>2024-10-29.11:18:12.770</ModifiedTimestamp>
+      <ObjectId>210099789</ObjectId>
       <LobDataSpaceId>0</LobDataSpaceId>
     </table>
-    <table id="5615" parent="5599" name="tblHaendelseslog">
-      <CreatedTimestamp>2024-10-29.11:11:32.813</CreatedTimestamp>
+    <table id="5615" parent="5599" name="tblHaendelsesType">
+      <CreatedTimestamp>2024-10-29.11:17:39.363</CreatedTimestamp>
       <DataRetentionPeriod>-1</DataRetentionPeriod>
-      <ModifiedTimestamp>2024-10-29.11:11:32.983</ModifiedTimestamp>
-      <ObjectId>1493580359</ObjectId>
+      <ModifiedTimestamp>2024-10-29.11:18:12.763</ModifiedTimestamp>
+      <ObjectId>162099618</ObjectId>
       <LobDataSpaceId>0</LobDataSpaceId>
     </table>
-    <table id="5616" parent="5599" name="tblHundeOpl.">
-      <CreatedTimestamp>2024-10-29.11:14:59.743</CreatedTimestamp>
+    <table id="5616" parent="5599" name="tblHundeOpl">
+      <CreatedTimestamp>2024-10-29.11:17:07.750</CreatedTimestamp>
       <DataRetentionPeriod>-1</DataRetentionPeriod>
-      <ModifiedTimestamp>2024-10-29.11:14:59.910</ModifiedTimestamp>
-      <ObjectId>1557580587</ObjectId>
+      <ModifiedTimestamp>2024-10-29.11:19:18.403</ModifiedTimestamp>
+      <ObjectId>98099390</ObjectId>
       <LobDataSpaceId>0</LobDataSpaceId>
     </table>
     <table id="5617" parent="5599" name="tblLavOphold">
-      <CreatedTimestamp>2024-10-29.11:16:18.860</CreatedTimestamp>
+      <CreatedTimestamp>2024-10-29.11:16:34.663</CreatedTimestamp>
       <DataRetentionPeriod>-1</DataRetentionPeriod>
-      <ModifiedTimestamp>2024-10-29.11:16:19.030</ModifiedTimestamp>
-      <ObjectId>1589580701</ObjectId>
+      <ModifiedTimestamp>2024-10-29.11:18:53.697</ModifiedTimestamp>
+      <ObjectId>18099105</ObjectId>
       <LobDataSpaceId>0</LobDataSpaceId>
     </table>
     <argument id="5618" parent="5602">
@@ -17232,7 +17232,6 @@ int</ExtendedProperties>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StoredType>sysname|0s</StoredType>
-      <CollationName>Danish_Norwegian_CI_AS</CollationName>
     </column>
     <column id="5637" parent="5610" name="principal_id">
       <NotNull>1</NotNull>
@@ -17242,7 +17241,7 @@ int</ExtendedProperties>
     <column id="5638" parent="5610" name="diagram_id">
       <NotNull>1</NotNull>
       <Position>3</Position>
-      <SequenceIdentity>1</SequenceIdentity>
+      <SequenceIdentity>1(2)</SequenceIdentity>
       <StoredType>int|0s</StoredType>
     </column>
     <column id="5639" parent="5610" name="version">
@@ -17253,7 +17252,7 @@ int</ExtendedProperties>
       <Position>5</Position>
       <StoredType>varbinary(max)|0s</StoredType>
     </column>
-    <index id="5641" parent="5610" name="PK__sysdiagr__C2B05B617D76765E">
+    <index id="5641" parent="5610" name="PK__sysdiagr__C2B05B618D9A02CC">
       <Clustering>1</Clustering>
       <ColNames>diagram_id</ColNames>
       <NameSurrogate>1</NameSurrogate>
@@ -17268,47 +17267,44 @@ name</ColNames>
       <Unique>1</Unique>
       <PartitionDataSpaceId>1</PartitionDataSpaceId>
     </index>
-    <key id="5643" parent="5610" name="PK__sysdiagr__C2B05B617D76765E">
-      <CreatedTimestamp>2024-10-29.11:04:45.743</CreatedTimestamp>
-      <ModifiedTimestamp>2024-10-29.11:04:45.743</ModifiedTimestamp>
+    <key id="5643" parent="5610" name="PK__sysdiagr__C2B05B618D9A02CC">
+      <CreatedTimestamp>2024-10-29.10:26:42.967</CreatedTimestamp>
+      <ModifiedTimestamp>2024-10-29.10:26:42.967</ModifiedTimestamp>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>1285579618</ObjectId>
+      <ObjectId>1077578877</ObjectId>
       <Primary>1</Primary>
-      <UnderlyingIndexName>PK__sysdiagr__C2B05B617D76765E</UnderlyingIndexName>
+      <UnderlyingIndexName>PK__sysdiagr__C2B05B618D9A02CC</UnderlyingIndexName>
     </key>
     <key id="5644" parent="5610" name="UK_principal_name">
-      <CreatedTimestamp>2024-10-29.11:04:45.743</CreatedTimestamp>
-      <ModifiedTimestamp>2024-10-29.11:04:45.743</ModifiedTimestamp>
-      <ObjectId>1301579675</ObjectId>
+      <CreatedTimestamp>2024-10-29.10:26:42.970</CreatedTimestamp>
+      <ModifiedTimestamp>2024-10-29.10:26:42.970</ModifiedTimestamp>
+      <ObjectId>1093578934</ObjectId>
       <UnderlyingIndexName>UK_principal_name</UnderlyingIndexName>
     </key>
-    <column id="5645" parent="5611" name="fldPostnummer">
+    <column id="5645" parent="5611" name="fldPostNr">
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StoredType>nchar(6 char)|0s</StoredType>
-      <CollationName>Danish_Norwegian_CI_AS</CollationName>
     </column>
     <column id="5646" parent="5611" name="fldBy">
-      <NotNull>1</NotNull>
       <Position>2</Position>
       <StoredType>nchar(40 char)|0s</StoredType>
-      <CollationName>Danish_Norwegian_CI_AS</CollationName>
     </column>
     <index id="5647" parent="5611" name="PK_tblBy">
       <Clustering>1</Clustering>
-      <ColNames>fldPostnummer</ColNames>
+      <ColNames>fldPostNr</ColNames>
       <Position>1</Position>
       <Unique>1</Unique>
       <PartitionDataSpaceId>1</PartitionDataSpaceId>
     </index>
     <key id="5648" parent="5611" name="PK_tblBy">
-      <CreatedTimestamp>2024-10-29.11:06:06.523</CreatedTimestamp>
-      <ModifiedTimestamp>2024-10-29.11:06:06.523</ModifiedTimestamp>
-      <ObjectId>1445580188</ObjectId>
+      <CreatedTimestamp>2024-10-29.11:06:10.810</CreatedTimestamp>
+      <ModifiedTimestamp>2024-10-29.11:06:10.810</ModifiedTimestamp>
+      <ObjectId>1525580473</ObjectId>
       <Primary>1</Primary>
       <UnderlyingIndexName>PK_tblBy</UnderlyingIndexName>
     </key>
-    <column id="5649" parent="5612" name="fldEjerID">
+    <column id="5649" parent="5612" name="fldEjerId">
       <NotNull>1</NotNull>
       <Position>1</Position>
       <SequenceIdentity>1</SequenceIdentity>
@@ -17317,216 +17313,257 @@ name</ColNames>
     <column id="5650" parent="5612" name="fldNavn">
       <Position>2</Position>
       <StoredType>nchar(40 char)|0s</StoredType>
-      <CollationName>Danish_Norwegian_CI_AS</CollationName>
     </column>
-    <column id="5651" parent="5612" name="fldTelefonNo">
+    <column id="5651" parent="5612" name="fldTlfNr">
       <Position>3</Position>
       <StoredType>nchar(12 char)|0s</StoredType>
-      <CollationName>Danish_Norwegian_CI_AS</CollationName>
     </column>
     <column id="5652" parent="5612" name="fldAdresse">
       <Position>4</Position>
       <StoredType>nchar(40 char)|0s</StoredType>
-      <CollationName>Danish_Norwegian_CI_AS</CollationName>
     </column>
-    <column id="5653" parent="5612" name="fldPostnummer">
+    <column id="5653" parent="5612" name="fldPostNr">
       <Position>5</Position>
       <StoredType>nchar(6 char)|0s</StoredType>
-      <CollationName>Danish_Norwegian_CI_AS</CollationName>
     </column>
-    <index id="5654" parent="5612" name="PK_tblEjer">
+    <foreign-key id="5654" parent="5612" name="FK_tblEjer_tblBy">
+      <ColNames>fldPostNr</ColNames>
+      <CreatedTimestamp>2024-10-29.11:19:18.220</CreatedTimestamp>
+      <ModifiedTimestamp>2024-10-29.11:19:18.220</ModifiedTimestamp>
+      <ObjectId>354100302</ObjectId>
+      <RefColNames>fldPostNr</RefColNames>
+      <RefTableId>1509580416</RefTableId>
+      <RefTableName>tblBy</RefTableName>
+    </foreign-key>
+    <index id="5655" parent="5612" name="PK_tblEjer">
       <Clustering>1</Clustering>
-      <ColNames>fldEjerID</ColNames>
+      <ColNames>fldEjerId</ColNames>
       <Position>1</Position>
       <Unique>1</Unique>
       <PartitionDataSpaceId>1</PartitionDataSpaceId>
     </index>
-    <key id="5655" parent="5612" name="PK_tblEjer">
-      <CreatedTimestamp>2024-10-29.11:08:20.683</CreatedTimestamp>
-      <ModifiedTimestamp>2024-10-29.11:08:20.683</ModifiedTimestamp>
-      <ObjectId>1477580302</ObjectId>
+    <key id="5656" parent="5612" name="PK_tblEjer">
+      <CreatedTimestamp>2024-10-29.11:19:18.220</CreatedTimestamp>
+      <ModifiedTimestamp>2024-10-29.11:19:18.220</ModifiedTimestamp>
+      <ObjectId>338100245</ObjectId>
       <Primary>1</Primary>
       <UnderlyingIndexName>PK_tblEjer</UnderlyingIndexName>
     </key>
-    <column id="5656" parent="5613" name="fldFoderId">
+    <column id="5657" parent="5613" name="fldFoderId">
       <NotNull>1</NotNull>
       <Position>1</Position>
       <SequenceIdentity>1</SequenceIdentity>
       <StoredType>int|0s</StoredType>
     </column>
-    <column id="5657" parent="5613" name="fldFoderType">
+    <column id="5658" parent="5613" name="fldFoderType">
       <Position>2</Position>
       <StoredType>nchar(30 char)|0s</StoredType>
-      <CollationName>Danish_Norwegian_CI_AS</CollationName>
     </column>
-    <index id="5658" parent="5613" name="PK_tblFoder">
+    <index id="5659" parent="5613" name="PK_tblFoder">
       <Clustering>1</Clustering>
       <ColNames>fldFoderId</ColNames>
       <Position>1</Position>
       <Unique>1</Unique>
       <PartitionDataSpaceId>1</PartitionDataSpaceId>
     </index>
-    <key id="5659" parent="5613" name="PK_tblFoder">
-      <CreatedTimestamp>2024-10-29.10:49:22.440</CreatedTimestamp>
-      <ModifiedTimestamp>2024-10-29.10:49:22.440</ModifiedTimestamp>
-      <ObjectId>1237579447</ObjectId>
+    <key id="5660" parent="5613" name="PK_tblFoder">
+      <CreatedTimestamp>2024-10-29.11:18:53.430</CreatedTimestamp>
+      <ModifiedTimestamp>2024-10-29.11:18:53.430</ModifiedTimestamp>
+      <ObjectId>290100074</ObjectId>
       <Primary>1</Primary>
       <UnderlyingIndexName>PK_tblFoder</UnderlyingIndexName>
     </key>
-    <column id="5660" parent="5614" name="fldHaendelsesTypeId">
+    <column id="5661" parent="5614" name="fldHaendelsesTypeId">
       <NotNull>1</NotNull>
       <Position>1</Position>
       <SequenceIdentity>1</SequenceIdentity>
       <StoredType>int|0s</StoredType>
     </column>
-    <column id="5661" parent="5614" name="fldHaendelse">
-      <Position>2</Position>
-      <StoredType>nchar(30 char)|0s</StoredType>
-      <CollationName>Danish_Norwegian_CI_AS</CollationName>
-    </column>
-    <index id="5662" parent="5614" name="PK_tblHaendelsesType">
-      <Clustering>1</Clustering>
-      <ColNames>fldHaendelsesTypeId</ColNames>
-      <Position>1</Position>
-      <Unique>1</Unique>
-      <PartitionDataSpaceId>1</PartitionDataSpaceId>
-    </index>
-    <key id="5663" parent="5614" name="PK_tblHaendelsesType">
-      <CreatedTimestamp>2024-10-29.11:13:16.290</CreatedTimestamp>
-      <ModifiedTimestamp>2024-10-29.11:13:16.290</ModifiedTimestamp>
-      <ObjectId>1541580530</ObjectId>
-      <Primary>1</Primary>
-      <UnderlyingIndexName>PK_tblHaendelsesType</UnderlyingIndexName>
-    </key>
-    <column id="5664" parent="5615" name="fldHaendelseId">
+    <column id="5662" parent="5614" name="fldHaendelseId">
       <NotNull>1</NotNull>
-      <Position>1</Position>
-      <SequenceIdentity>1</SequenceIdentity>
-      <StoredType>int|0s</StoredType>
-    </column>
-    <column id="5665" parent="5615" name="fldOpholdsId">
       <Position>2</Position>
       <StoredType>int|0s</StoredType>
     </column>
-    <column id="5666" parent="5615" name="fldHaendelsesTypeId">
+    <column id="5663" parent="5614" name="fldBeskrivelse">
       <Position>3</Position>
+      <StoredType>nchar(200 char)|0s</StoredType>
+    </column>
+    <column id="5664" parent="5614" name="fldHelbred">
+      <Position>4</Position>
+      <StoredType>nchar(10 char)|0s</StoredType>
+    </column>
+    <column id="5665" parent="5614" name="fldOpholdsId">
+      <Position>5</Position>
       <StoredType>int|0s</StoredType>
     </column>
-    <column id="5667" parent="5615" name="fldBeskrivelse">
-      <Position>4</Position>
-      <StoredType>nchar(200 char)|0s</StoredType>
-      <CollationName>Danish_Norwegian_CI_AS</CollationName>
-    </column>
-    <column id="5668" parent="5615" name="fldHelbred">
-      <Position>5</Position>
-      <StoredType>nchar(10 char)|0s</StoredType>
-      <CollationName>Danish_Norwegian_CI_AS</CollationName>
-    </column>
-    <index id="5669" parent="5615" name="PK_tblHaendelseslog">
+    <foreign-key id="5666" parent="5614" name="FK_tblHaendelsesLog_tblHaendelsesType">
+      <ColNames>fldHaendelsesTypeId</ColNames>
+      <CreatedTimestamp>2024-10-29.11:18:12.763</CreatedTimestamp>
+      <ModifiedTimestamp>2024-10-29.11:18:12.763</ModifiedTimestamp>
+      <ObjectId>258099960</ObjectId>
+      <RefColNames>fldHaendelsesTypeId</RefColNames>
+      <RefTableId>162099618</RefTableId>
+      <RefTableName>tblHaendelsesType</RefTableName>
+    </foreign-key>
+    <foreign-key id="5667" parent="5614" name="FK_tblHaendelsesLog_tblLavOphold">
+      <ColNames>fldOpholdsId</ColNames>
+      <CreatedTimestamp>2024-10-29.11:18:12.763</CreatedTimestamp>
+      <ModifiedTimestamp>2024-10-29.11:18:12.763</ModifiedTimestamp>
+      <ObjectId>242099903</ObjectId>
+      <RefColNames>fldOpholdsId</RefColNames>
+      <RefTableId>18099105</RefTableId>
+      <RefTableName>tblLavOphold</RefTableName>
+    </foreign-key>
+    <index id="5668" parent="5614" name="PK_tblHaendelsesLog">
       <Clustering>1</Clustering>
       <ColNames>fldHaendelseId</ColNames>
       <Position>1</Position>
       <Unique>1</Unique>
       <PartitionDataSpaceId>1</PartitionDataSpaceId>
     </index>
-    <key id="5670" parent="5615" name="PK_tblHaendelseslog">
-      <CreatedTimestamp>2024-10-29.11:11:32.980</CreatedTimestamp>
-      <ModifiedTimestamp>2024-10-29.11:11:32.980</ModifiedTimestamp>
-      <ObjectId>1509580416</ObjectId>
+    <key id="5669" parent="5614" name="PK_tblHaendelsesLog">
+      <CreatedTimestamp>2024-10-29.11:18:12.760</CreatedTimestamp>
+      <ModifiedTimestamp>2024-10-29.11:18:12.760</ModifiedTimestamp>
+      <ObjectId>226099846</ObjectId>
       <Primary>1</Primary>
-      <UnderlyingIndexName>PK_tblHaendelseslog</UnderlyingIndexName>
+      <UnderlyingIndexName>PK_tblHaendelsesLog</UnderlyingIndexName>
     </key>
-    <column id="5671" parent="5616" name="fldHundeId">
+    <column id="5670" parent="5615" name="fldHaendelsesTypeId">
       <NotNull>1</NotNull>
       <Position>1</Position>
       <SequenceIdentity>1</SequenceIdentity>
       <StoredType>int|0s</StoredType>
     </column>
-    <column id="5672" parent="5616" name="fldEjerId">
+    <column id="5671" parent="5615" name="fldHaendelse">
+      <Position>2</Position>
+      <StoredType>nchar(30 char)|0s</StoredType>
+    </column>
+    <index id="5672" parent="5615" name="PK_tblHaendelsesType">
+      <Clustering>1</Clustering>
+      <ColNames>fldHaendelsesTypeId</ColNames>
+      <Position>1</Position>
+      <Unique>1</Unique>
+      <PartitionDataSpaceId>1</PartitionDataSpaceId>
+    </index>
+    <key id="5673" parent="5615" name="PK_tblHaendelsesType">
+      <CreatedTimestamp>2024-10-29.11:17:39.390</CreatedTimestamp>
+      <ModifiedTimestamp>2024-10-29.11:17:39.390</ModifiedTimestamp>
+      <ObjectId>178099675</ObjectId>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PK_tblHaendelsesType</UnderlyingIndexName>
+    </key>
+    <column id="5674" parent="5616" name="fldHundeId">
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <SequenceIdentity>1</SequenceIdentity>
+      <StoredType>int|0s</StoredType>
+    </column>
+    <column id="5675" parent="5616" name="fldEjerId">
       <Position>2</Position>
       <StoredType>int|0s</StoredType>
     </column>
-    <column id="5673" parent="5616" name="fldNavn">
+    <column id="5676" parent="5616" name="fldNavn">
       <Position>3</Position>
       <StoredType>nchar(50 char)|0s</StoredType>
-      <CollationName>Danish_Norwegian_CI_AS</CollationName>
     </column>
-    <column id="5674" parent="5616" name="fldFoedselsdato">
+    <column id="5677" parent="5616" name="fldFoedselsDato">
       <Position>4</Position>
       <StoredType>date|0s</StoredType>
     </column>
-    <column id="5675" parent="5616" name="fldRace">
+    <column id="5678" parent="5616" name="fldRace">
       <Position>5</Position>
       <StoredType>nchar(30 char)|0s</StoredType>
-      <CollationName>Danish_Norwegian_CI_AS</CollationName>
     </column>
-    <index id="5676" parent="5616" name="PK_tblHundeOpl.">
+    <foreign-key id="5679" parent="5616" name="FK_tblHundeOpl_tblEjer">
+      <ColNames>fldEjerId</ColNames>
+      <CreatedTimestamp>2024-10-29.11:19:18.400</CreatedTimestamp>
+      <ModifiedTimestamp>2024-10-29.11:19:18.400</ModifiedTimestamp>
+      <ObjectId>370100359</ObjectId>
+      <RefColNames>fldEjerId</RefColNames>
+      <RefTableId>322100188</RefTableId>
+      <RefTableName>tblEjer</RefTableName>
+    </foreign-key>
+    <index id="5680" parent="5616" name="PK_tblHundeOpl">
       <Clustering>1</Clustering>
       <ColNames>fldHundeId</ColNames>
       <Position>1</Position>
       <Unique>1</Unique>
       <PartitionDataSpaceId>1</PartitionDataSpaceId>
     </index>
-    <key id="5677" parent="5616" name="PK_tblHundeOpl.">
-      <CreatedTimestamp>2024-10-29.11:14:59.907</CreatedTimestamp>
-      <ModifiedTimestamp>2024-10-29.11:14:59.907</ModifiedTimestamp>
-      <ObjectId>1573580644</ObjectId>
+    <key id="5681" parent="5616" name="PK_tblHundeOpl">
+      <CreatedTimestamp>2024-10-29.11:17:08.223</CreatedTimestamp>
+      <ModifiedTimestamp>2024-10-29.11:17:08.223</ModifiedTimestamp>
+      <ObjectId>114099447</ObjectId>
       <Primary>1</Primary>
-      <UnderlyingIndexName>PK_tblHundeOpl.</UnderlyingIndexName>
+      <UnderlyingIndexName>PK_tblHundeOpl</UnderlyingIndexName>
     </key>
-    <column id="5678" parent="5617" name="fldOpholdsId">
+    <column id="5682" parent="5617" name="fldOpholdsId">
       <NotNull>1</NotNull>
       <Position>1</Position>
       <SequenceIdentity>1</SequenceIdentity>
       <StoredType>int|0s</StoredType>
     </column>
-    <column id="5679" parent="5617" name="fldHundeId">
+    <column id="5683" parent="5617" name="fldVaccine">
       <Position>2</Position>
-      <StoredType>int|0s</StoredType>
+      <StoredType>nchar(10 char)|0s</StoredType>
     </column>
-    <column id="5680" parent="5617" name="fldFoderId">
+    <column id="5684" parent="5617" name="fldLoppeBehandling">
       <Position>3</Position>
-      <StoredType>int|0s</StoredType>
+      <StoredType>nchar(10 char)|0s</StoredType>
     </column>
-    <column id="5681" parent="5617" name="fldVaccine">
+    <column id="5685" parent="5617" name="fldForsikring">
       <Position>4</Position>
       <StoredType>nchar(10 char)|0s</StoredType>
-      <CollationName>Danish_Norwegian_CI_AS</CollationName>
     </column>
-    <column id="5682" parent="5617" name="fldLoppebehandling">
+    <column id="5686" parent="5617" name="fldVægt">
       <Position>5</Position>
-      <StoredType>nchar(10 char)|0s</StoredType>
-      <CollationName>Danish_Norwegian_CI_AS</CollationName>
+      <StoredType>int|0s</StoredType>
     </column>
-    <column id="5683" parent="5617" name="fldForsikring">
+    <column id="5687" parent="5617" name="fldBehov">
       <Position>6</Position>
-      <StoredType>nchar(10 char)|0s</StoredType>
-      <CollationName>Danish_Norwegian_CI_AS</CollationName>
+      <StoredType>nchar(200 char)|0s</StoredType>
     </column>
-    <column id="5684" parent="5617" name="fldVægt">
+    <column id="5688" parent="5617" name="fldHundeId">
       <Position>7</Position>
       <StoredType>int|0s</StoredType>
     </column>
-    <column id="5685" parent="5617" name="fldBehov">
+    <column id="5689" parent="5617" name="fldFoderId">
       <Position>8</Position>
-      <StoredType>nchar(200 char)|0s</StoredType>
-      <CollationName>Danish_Norwegian_CI_AS</CollationName>
+      <StoredType>int|0s</StoredType>
     </column>
-    <column id="5686" parent="5617" name="fldVarighed">
+    <column id="5690" parent="5617" name="fldVarighed">
       <Position>9</Position>
       <StoredType>int|0s</StoredType>
     </column>
-    <index id="5687" parent="5617" name="PK_tblLavOphold">
+    <foreign-key id="5691" parent="5617" name="FK_tblLavOphold_tblHundeOpl">
+      <ColNames>fldHundeId</ColNames>
+      <CreatedTimestamp>2024-10-29.11:17:08.377</CreatedTimestamp>
+      <ModifiedTimestamp>2024-10-29.11:17:08.377</ModifiedTimestamp>
+      <ObjectId>146099561</ObjectId>
+      <RefColNames>fldHundeId</RefColNames>
+      <RefTableId>98099390</RefTableId>
+      <RefTableName>tblHundeOpl</RefTableName>
+    </foreign-key>
+    <foreign-key id="5692" parent="5617" name="FK_tblLavOphold_tblFoder">
+      <ColNames>fldFoderId</ColNames>
+      <CreatedTimestamp>2024-10-29.11:18:53.683</CreatedTimestamp>
+      <ModifiedTimestamp>2024-10-29.11:18:53.683</ModifiedTimestamp>
+      <ObjectId>306100131</ObjectId>
+      <RefColNames>fldFoderId</RefColNames>
+      <RefTableId>274100017</RefTableId>
+      <RefTableName>tblFoder</RefTableName>
+    </foreign-key>
+    <index id="5693" parent="5617" name="PK_tblLavOphold">
       <Clustering>1</Clustering>
       <ColNames>fldOpholdsId</ColNames>
       <Position>1</Position>
       <Unique>1</Unique>
       <PartitionDataSpaceId>1</PartitionDataSpaceId>
     </index>
-    <key id="5688" parent="5617" name="PK_tblLavOphold">
-      <CreatedTimestamp>2024-10-29.11:16:19.027</CreatedTimestamp>
-      <ModifiedTimestamp>2024-10-29.11:16:19.027</ModifiedTimestamp>
-      <ObjectId>1605580758</ObjectId>
+    <key id="5694" parent="5617" name="PK_tblLavOphold">
+      <CreatedTimestamp>2024-10-29.11:16:35.083</CreatedTimestamp>
+      <ModifiedTimestamp>2024-10-29.11:16:35.083</ModifiedTimestamp>
+      <ObjectId>34099162</ObjectId>
       <Primary>1</Primary>
       <UnderlyingIndexName>PK_tblLavOphold</UnderlyingIndexName>
     </key>
