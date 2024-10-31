@@ -12,58 +12,60 @@ public class Main
 {
 
     private static final Scanner scanner = new Scanner(System.in);
-    private static boolean exit = false;
-    private static Owner currentOwner = null;
+
 
 
     public static void main(String[] args) throws Exception
     {
-        System.out.println("Welcome to the Dog Daycare");
+        startMenu();
+        signUp();
+    }
 
-        String firstMenu = null;
-        OwnerDao oDao = new OwnerDaoImpl();
-        DogDao dDao = new DogDaoImpl();
+    private static void startMenu()
+    {
+        System.out.println("Welcome to Dog Daycare");
 
-
-        checkUserStatus(oDao);
-
-
-
-        while(!exit)
+        String userStatus = "";
+        while(!userStatus.equals("existing") && !userStatus.equals("new"))
         {
-            private static void checkUserStatus(OwnerDao oDao)
+            System.out.println("Are you a new or existing owner? (type 'existing' or 'new')");
+            userStatus = scanner.nextLine();
+
+            switch (userStatus)
             {
-                boolean isUserValid = false;
+                case "existing":
+                    System.out.println("Welcome back! Go and input your Id");
+                    break;
 
-                while(!isUserValid){
-                    System.out.println("Are you an existing Owner? (yes/no)");
-                    String userResponse = scanner.nextLine();
+                case "new":
+                    System.out.println("Welcome! Let's create a new Owner profile");
+                    break;
 
-                    switch(userResponse)
-                    {
-                        case "yes":
-                            isUserValid = true;
-                            break;
-
-                        case "no":
-                            isUserValid = false;
-                            break;
-
-                        default:
-                            System.out.println("please try again");
-                    }
-
-                }
+                default:
+                    System.out.println("Invalid input");
             }
-
-            private static boolean validateOwner(OwnerDao oDao)
-            System.out.println("Pleaser Enter your ID: ");
-            int ownerId = Integer.parseInt(scanner.nextLine());
-
         }
+    }
 
+    private static void signUp() throws Exception
+    {
 
+        System.out.println("Let's create the owner");
+        System.out.println("Please enter a name:");
+        String name = scanner.nextLine();
+        System.out.println("Please enter a Phone number:");
+        String phoneNumber = scanner.nextLine();
+        System.out.println("Please enter an address:");
+        String address = scanner.nextLine();
+        System.out.println("Please enter a zip code:");
+        String zipCode = scanner.nextLine();
 
+        Owner owner = new Owner(name, phoneNumber, address, zipCode);
+        OwnerDao oDao = new OwnerDaoImpl();
+        oDao.createOwner(owner);
+        oDao.readAllOwners();
+
+    }
 
 
 
@@ -104,5 +106,4 @@ public class Main
     System.out.println("slut");
 
       */
-    }
 }

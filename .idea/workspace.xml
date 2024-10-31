@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ab50fa1a-5ab7-4c82-8295-a69b4117a142" name="Changes" comment="Updating Master + DaoImpl for Owner">
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/EventLog/EventlogDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/EventLog/EventLogDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,7 +24,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="WorkingOnMain" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -92,6 +92,7 @@
       <updated>1730195429574</updated>
       <workItem from="1730195430644" duration="1202000" />
       <workItem from="1730282268281" duration="12954000" />
+      <workItem from="1730374265745" duration="911000" />
     </task>
     <task id="LOCAL-00001" summary="Updating Master">
       <option name="closed" value="true" />
