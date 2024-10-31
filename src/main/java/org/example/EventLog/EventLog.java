@@ -9,8 +9,10 @@ public class EventLog {
         this.description = description;
         this.health = health;
     }
+    public EventLog(int id, String description, String health) {}
+
     public EventLog () {
-        //What doing?
+
     }
 
     public String getDescription()

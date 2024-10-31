@@ -1,5 +1,6 @@
 package org.example;
 
+import org.example.Dog.Dog;
 import org.example.Dog.DogDao;
 import org.example.Dog.DogDaoImpl;
 import org.example.EventLog.EventLog;
@@ -12,10 +13,24 @@ import org.example.Owner.Owner;
 import org.example.Owner.OwnerDao;
 import org.example.Owner.OwnerDaoImpl;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
 import java.util.Scanner;
 
 public class Main
 {
+
+    private static final String URL = "jdbc:sqlserver://localhost;portNumber=1433;databaseName=dbHundePension";
+    private static final String USERNAME = "sa"; // replace with your username
+    private static final String PASSWORD = "123456"; // replace with your password
+
+    public static Connection getConnection() throws Exception {
+        Connection conn = null;
+        Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+        conn = DriverManager.getConnection(URL, USERNAME, PASSWORD);
+        System.out.println("Connected to the database.");
+        return conn;
+    }
     public static void main(String[] args) throws Exception
     {
 
@@ -32,10 +47,12 @@ public class Main
 
 
     private static void secondMenu(Scanner scanner, OwnerDao oDao) throws Exception {
-        System.out.println("%nSelect one of the following options: ");
-        System.out.println("1. Owner ");
-        System.out.println("2. Dog ");
-        System.out.println("3. EventLog ");
+        System.out.printf("%nSelect one of the following options: %n");
+        System.out.println("1. Read owner ");
+        System.out.println("2. Read all owner ");
+        System.out.println("3. Read dog ");
+        System.out.println("4. Read all dogs ");
+        System.out.println("5. Read eventLog ");
         int option = scanner.nextInt();
         scanner.nextLine();
 
@@ -43,31 +60,39 @@ public class Main
             case 1:
                 System.out.print("Enter owner ID to read: ");
                 int readId = scanner.nextInt();
-                Owner owner = oDao.Owner(readId);
-                if (owner != null) {
-                    System.out.println("owner found: " + owner);
-                    ownerChosen(scanner, owner);
-                    break;
-                } else {
-                    System.out.println("owner not found");
-                }
+                OwnerDao owner = new OwnerDaoImpl();
+                owner.readOwner(readId);
                 break;
+
             case 2:
+                OwnerDao allOwners = new OwnerDaoImpl();
+                allOwners.readAllOwners();
+                break;
+
+            case 3:
                 System.out.print("Enter dog ID to read: ");
-                int readId = scanner.nextInt();
-                Dog dog = dDao.read(readId);
-                if (dog != null) {
-                    System.out.println("dog found: " + dog);
-                } else {
-                    System.out.println("dog not found");
-                }
+                int readId2 = scanner.nextInt();
+                DogDao dog = new DogDaoImpl();
+                dog.readDog(readId2);
+                break;
+
+            case 4:
+                DogDao allDogs = new DogDaoImpl();
+                allDogs.readAllDogs();
+                break;
+
+            /*case 5:
+                System.out.print("Enter eventLog ID to read: ");
+                int readId3 = scanner.nextInt();
+                EventLogDao eventLog = new EventLogDaoImpl();
+                eventLog.readEventLog(readId3);
+                break;
+
+             */
+            default:
                 break;
         }
     }
-    private static void ownerChosen(Scanner scanner, Owner owner)
-    {
-
-
-    }
 }
+
 
