@@ -1,7 +1,5 @@
 package org.example.Owner;
 
-import org.example.Dog.Dog;
-import java.sql.*;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -77,5 +75,17 @@ public class OwnerDaoImpl implements OwnerDao
             System.out.println("No owners found.");
         }
     }
+
+    @Override
+    public boolean ownerExists(int ownerId) throws Exception {
+        String sql = "SELECT 1 FROM tblEjer WHERE fldEjerId = ?";
+        try (Connection conn = getConnection();
+             PreparedStatement pstmt = conn.prepareStatement(sql)) {
+            pstmt.setInt(1, ownerId);
+            ResultSet rs = pstmt.executeQuery();
+            return rs.next(); // If a record is found, return true
+        }
+    }
+
 }
 
