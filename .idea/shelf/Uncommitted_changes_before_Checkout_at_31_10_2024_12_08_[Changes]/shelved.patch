@@ -1,0 +1,158 @@
+Index: src/main/java/org/example/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package org.example;\r\n\r\nimport org.example.City.CityDao;\r\nimport org.example.Dog.Dog;\r\nimport org.example.Dog.DogDao;\r\nimport org.example.Dog.DogDaoImpl;\r\nimport org.example.EventLog.EventLog;\r\nimport org.example.EventLog.EventLogDao;\r\nimport org.example.EventLog.EventlogDaoImpl;\r\nimport org.example.Owner.Owner;\r\nimport org.example.Owner.OwnerDao;\r\nimport org.example.Owner.OwnerDaoImpl;\r\n\r\nimport java.sql.Connection;\r\nimport java.sql.DriverManager;\r\nimport java.util.Scanner;\r\n\r\npublic class Main\r\n{\r\n\r\n    public static void main(String[] args) throws Exception\r\n    {\r\n        System.out.println(\"Welcome to the Dog Daycare\");\r\n        Scanner scanner = new Scanner(System.in);\r\n        String interfaceId = null;\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n        /*\r\n        OwnerDao oDao = new OwnerDaoImpl();\r\n        oDao.readOwner(1);\r\n        Owner o = new Owner(\"John Doe\", \"14439230\", \"Ringgade 5\", \"6400\");\r\n        oDao.createOwner(o);\r\n        oDao.readAllOwners();\r\n\r\n\r\n         */\r\n\r\n\r\n\r\n     /*\r\n    DogDao dDao = new DogDaoImpl();\r\n    dDao.readDog(1);\r\n\r\n    //Dog d = new Dog(\"Thunder\",\"Labrador Retriever\",\"2019-10-15\");\r\n    //dao.createDog(d);\r\n\r\n    dDao.readAllDogs();\r\n\r\n\r\n\r\n    System.out.println(\"slut\");\r\n\r\n      */\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/org/example/Main.java b/src/main/java/org/example/Main.java
+--- a/src/main/java/org/example/Main.java	(revision 1e934ee8a353bc720f3ea24ad6fed05613009a1e)
++++ b/src/main/java/org/example/Main.java	(date 1730372882770)
+@@ -1,28 +1,67 @@
+ package org.example;
+ 
+-import org.example.City.CityDao;
+-import org.example.Dog.Dog;
+ import org.example.Dog.DogDao;
+ import org.example.Dog.DogDaoImpl;
+-import org.example.EventLog.EventLog;
+-import org.example.EventLog.EventLogDao;
+-import org.example.EventLog.EventlogDaoImpl;
+ import org.example.Owner.Owner;
+ import org.example.Owner.OwnerDao;
+ import org.example.Owner.OwnerDaoImpl;
+ 
+-import java.sql.Connection;
+-import java.sql.DriverManager;
+ import java.util.Scanner;
+ 
+ public class Main
+ {
+ 
++    private static final Scanner scanner = new Scanner(System.in);
++    private static boolean exit = false;
++    private static Owner currentOwner = null;
++
++
+     public static void main(String[] args) throws Exception
+     {
+         System.out.println("Welcome to the Dog Daycare");
+-        Scanner scanner = new Scanner(System.in);
+-        String interfaceId = null;
++
++        String firstMenu = null;
++        OwnerDao oDao = new OwnerDaoImpl();
++        DogDao dDao = new DogDaoImpl();
++
++
++        checkUserStatus(oDao);
++
++
++
++        while(!exit)
++        {
++            private static void checkUserStatus(OwnerDao oDao)
++            {
++                boolean isUserValid = false;
++
++                while(!isUserValid){
++                    System.out.println("Are you an existing Owner? (yes/no)");
++                    String userResponse = scanner.nextLine();
++
++                    switch(userResponse)
++                    {
++                        case "yes":
++                            isUserValid = true;
++                            break;
++
++                        case "no":
++                            isUserValid = false;
++                            break;
++
++                        default:
++                            System.out.println("please try again");
++                    }
++
++                }
++            }
++
++            private static boolean validateOwner(OwnerDao oDao)
++            System.out.println("Pleaser Enter your ID: ");
++            int ownerId = Integer.parseInt(scanner.nextLine());
++
++        }
++
+ 
+ 
+ 
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"ab50fa1a-5ab7-4c82-8295-a69b4117a142\" name=\"Changes\" comment=\"Updating Master + DaoImpl for Owner\">\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/org/example/EventType/EventTypeDao.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/org/example/EventType/EventTypeDaoImpl.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/org/example/Owner/OwnerDaoImpl.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/sqldialects.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/sqldialects.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/org/example/Dog/Dog.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/org/example/Dog/Dog.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/org/example/Dog/DogDaoImpl.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/org/example/Dog/DogDaoImpl.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/org/example/EventType/EventType.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/org/example/EventType/EventType.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/org/example/Main.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/org/example/Main.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/org/example/Owner/Owner.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/org/example/Owner/Owner.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/org/example/Owner/OwnerDao.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/org/example/Owner/OwnerDao.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/org/example/Stay/StayDaoImpl.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/org/example/Stay/StayDaoImpl.java\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Interface\" />\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"WorkingOnMain\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\">{\r\n  &quot;lastFilter&quot;: {\r\n    &quot;state&quot;: &quot;OPEN&quot;,\r\n    &quot;assignee&quot;: &quot;TobiasFalck&quot;\r\n  }\r\n}</component>\r\n  <component name=\"GithubPullRequestsUISettings\">{\r\n  &quot;selectedUrlAndAccountId&quot;: {\r\n    &quot;url&quot;: &quot;https://github.com/TobiasFalck/HundePension.git&quot;,\r\n    &quot;accountId&quot;: &quot;fd1338ce-02a7-49a4-9b16-8f6f33b56500&quot;\r\n  }\r\n}</component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 5\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2o6gR2dEXNCOxx9vgb8kt75Sbpq\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\r\n    <ConfirmationsSetting value=\"1\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"Application.Main.executor\": \"Run\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"SHARE_PROJECT_CONFIGURATION_FILES\": \"true\",\r\n    \"git-widget-placeholder\": \"master\",\r\n    \"kotlin-language-version-configured\": \"true\",\r\n    \"node.js.detected.package.eslint\": \"true\",\r\n    \"node.js.detected.package.tslint\": \"true\",\r\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\r\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\r\n    \"nodejs_package_manager_path\": \"npm\",\r\n    \"onboarding.tips.debug.path\": \"C:/Users/Champ/IdeaProjects/HundePension/src/main/java/org/example/Main.java\",\r\n    \"settings.editor.selected.configurable\": \"preferences.lookFeel\",\r\n    \"vue.rearranger.settings.migration\": \"true\"\r\n  },\r\n  \"keyToStringList\": {\r\n    \"DatabaseDriversLRU\": [\r\n      \"sqlserver\"\r\n    ]\r\n  }\r\n}]]></component>\r\n  <component name=\"SharedIndexes\">\r\n    <attachedChunks>\r\n      <set>\r\n        <option value=\"bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.21829.142\" />\r\n        <option value=\"bundled-js-predefined-d6986cc7102b-7c0b70fcd90d-JavaScript-IU-242.21829.142\" />\r\n      </set>\r\n    </attachedChunks>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"ab50fa1a-5ab7-4c82-8295-a69b4117a142\" name=\"Changes\" comment=\"\" />\r\n      <created>1730195429574</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1730195429574</updated>\r\n      <workItem from=\"1730195430644\" duration=\"1202000\" />\r\n      <workItem from=\"1730282268281\" duration=\"12954000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Updating Master\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1730282909650</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1730282909650</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"2\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"Updating Master\" />\r\n    <MESSAGE value=\"Updating Master + DaoImpl for Owner\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Updating Master + DaoImpl for Owner\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 1e934ee8a353bc720f3ea24ad6fed05613009a1e)
++++ b/.idea/workspace.xml	(date 1730372883052)
+@@ -5,18 +5,8 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="ab50fa1a-5ab7-4c82-8295-a69b4117a142" name="Changes" comment="Updating Master + DaoImpl for Owner">
+-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/EventType/EventTypeDao.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/EventType/EventTypeDaoImpl.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Owner/OwnerDaoImpl.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Dog/Dog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Dog/Dog.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Dog/DogDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Dog/DogDaoImpl.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/EventType/EventType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/EventType/EventType.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/EventLog/EventlogDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/EventLog/EventLogDaoImpl.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Owner/Owner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Owner/Owner.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Owner/OwnerDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Owner/OwnerDao.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Stay/StayDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Stay/StayDaoImpl.java" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -67,7 +57,7 @@
+     "Application.Main.executor": "Run",
+     "RunOnceActivity.ShowReadmeOnStart": "true",
+     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+-    "git-widget-placeholder": "master",
++    "git-widget-placeholder": "WorkingOnMain",
+     "kotlin-language-version-configured": "true",
+     "node.js.detected.package.eslint": "true",
+     "node.js.detected.package.tslint": "true",
+Index: src/main/java/org/example/Owner/Owner.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package org.example.Owner;\r\n\r\npublic class Owner {\r\n    private Integer ownerId;\r\n    private String name;\r\n    private String phoneNumber;\r\n    private String address;\r\n    private String zipCode;\r\n\r\n    public Owner(String name, String phoneNumber, String address, String zipcode) {\r\n        this.name = name;\r\n        this.phoneNumber = phoneNumber;\r\n        this.address = address;\r\n        this.zipCode = zipcode;\r\n    }\r\n\r\n    public Owner(int ownerId, String name, String phoneNumber, String address, String zipCode)\r\n    {\r\n        this.ownerId = ownerId;\r\n        this.name = name;\r\n        this.phoneNumber = phoneNumber;\r\n        this.address = address;\r\n        this.zipCode = zipCode;\r\n\r\n    }\r\n    public Owner()\r\n    {\r\n\r\n    }\r\n\r\n    public Integer getOwnerId()\r\n    {\r\n        return ownerId;\r\n    }\r\n\r\n    public void setOwnerId(Integer ownerId)\r\n    {\r\n        this.ownerId = ownerId;\r\n    }\r\n\r\n    public String getName() {\r\n        return name;\r\n    }\r\n\r\n    public void setName(String name) {\r\n        this.name = name;\r\n    }\r\n\r\n    public String getPhoneNumber() {\r\n        return phoneNumber;\r\n    }\r\n\r\n    public void setPhoneNumber(String phoneNumber) {\r\n        this.phoneNumber = phoneNumber;\r\n    }\r\n\r\n    public String getAddress() {\r\n        return address;\r\n    }\r\n\r\n    public void setAddress(String address) {\r\n        this.address = address;\r\n    }\r\n\r\n    public String getZipCode()\r\n    {\r\n        return zipCode;\r\n    }\r\n\r\n    public void setZipCode(String zipCode)\r\n    {\r\n        this.zipCode = zipCode;\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/org/example/Owner/Owner.java b/src/main/java/org/example/Owner/Owner.java
+--- a/src/main/java/org/example/Owner/Owner.java	(revision 1e934ee8a353bc720f3ea24ad6fed05613009a1e)
++++ b/src/main/java/org/example/Owner/Owner.java	(date 1730372882817)
+@@ -14,6 +14,7 @@
+         this.zipCode = zipcode;
+     }
+ 
++
+     public Owner(int ownerId, String name, String phoneNumber, String address, String zipCode)
+     {
+         this.ownerId = ownerId;
+@@ -23,11 +24,13 @@
+         this.zipCode = zipCode;
+ 
+     }
++
+     public Owner()
+     {
+ 
+     }
+ 
++
+     public Integer getOwnerId()
+     {
+         return ownerId;

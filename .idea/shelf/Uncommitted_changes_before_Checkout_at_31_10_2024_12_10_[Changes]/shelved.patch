@@ -1,0 +1,59 @@
+Index: src/main/java/org/example/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package org.example;\r\n\r\nimport org.example.City.CityDao;\r\nimport org.example.Dog.Dog;\r\nimport org.example.Dog.DogDao;\r\nimport org.example.Dog.DogDaoImpl;\r\nimport org.example.EventLog.EventLog;\r\nimport org.example.EventLog.EventLogDao;\r\nimport org.example.EventLog.EventlogDaoImpl;\r\nimport org.example.Owner.Owner;\r\nimport org.example.Owner.OwnerDao;\r\nimport org.example.Owner.OwnerDaoImpl;\r\n\r\nimport java.sql.Connection;\r\nimport java.sql.DriverManager;\r\nimport java.util.Scanner;\r\n\r\npublic class Main\r\n{\r\n\r\n    public static void main(String[] args) throws Exception\r\n    {\r\n        System.out.println(\"Welcome to the Dog Daycare\");\r\n        Scanner scanner = new Scanner(System.in);\r\n        String interfaceId = null;\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n        /*\r\n        OwnerDao oDao = new OwnerDaoImpl();\r\n        oDao.readOwner(1);\r\n        Owner o = new Owner(\"John Doe\", \"14439230\", \"Ringgade 5\", \"6400\");\r\n        oDao.createOwner(o);\r\n        oDao.readAllOwners();\r\n\r\n\r\n         */\r\n\r\n\r\n\r\n     /*\r\n    DogDao dDao = new DogDaoImpl();\r\n    dDao.readDog(1);\r\n\r\n    //Dog d = new Dog(\"Thunder\",\"Labrador Retriever\",\"2019-10-15\");\r\n    //dao.createDog(d);\r\n\r\n    dDao.readAllDogs();\r\n\r\n\r\n\r\n    System.out.println(\"slut\");\r\n\r\n      */\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/org/example/Main.java b/src/main/java/org/example/Main.java
+--- a/src/main/java/org/example/Main.java	(revision 1e934ee8a353bc720f3ea24ad6fed05613009a1e)
++++ b/src/main/java/org/example/Main.java	(date 1730373037959)
+@@ -1,18 +1,6 @@
+ package org.example;
+ 
+-import org.example.City.CityDao;
+-import org.example.Dog.Dog;
+-import org.example.Dog.DogDao;
+-import org.example.Dog.DogDaoImpl;
+-import org.example.EventLog.EventLog;
+-import org.example.EventLog.EventLogDao;
+-import org.example.EventLog.EventlogDaoImpl;
+-import org.example.Owner.Owner;
+-import org.example.Owner.OwnerDao;
+-import org.example.Owner.OwnerDaoImpl;
+ 
+-import java.sql.Connection;
+-import java.sql.DriverManager;
+ import java.util.Scanner;
+ 
+ public class Main
+Index: src/main/java/org/example/Owner/Owner.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package org.example.Owner;\r\n\r\npublic class Owner {\r\n    private Integer ownerId;\r\n    private String name;\r\n    private String phoneNumber;\r\n    private String address;\r\n    private String zipCode;\r\n\r\n    public Owner(String name, String phoneNumber, String address, String zipcode) {\r\n        this.name = name;\r\n        this.phoneNumber = phoneNumber;\r\n        this.address = address;\r\n        this.zipCode = zipcode;\r\n    }\r\n\r\n    public Owner(int ownerId, String name, String phoneNumber, String address, String zipCode)\r\n    {\r\n        this.ownerId = ownerId;\r\n        this.name = name;\r\n        this.phoneNumber = phoneNumber;\r\n        this.address = address;\r\n        this.zipCode = zipCode;\r\n\r\n    }\r\n    public Owner()\r\n    {\r\n\r\n    }\r\n\r\n    public Integer getOwnerId()\r\n    {\r\n        return ownerId;\r\n    }\r\n\r\n    public void setOwnerId(Integer ownerId)\r\n    {\r\n        this.ownerId = ownerId;\r\n    }\r\n\r\n    public String getName() {\r\n        return name;\r\n    }\r\n\r\n    public void setName(String name) {\r\n        this.name = name;\r\n    }\r\n\r\n    public String getPhoneNumber() {\r\n        return phoneNumber;\r\n    }\r\n\r\n    public void setPhoneNumber(String phoneNumber) {\r\n        this.phoneNumber = phoneNumber;\r\n    }\r\n\r\n    public String getAddress() {\r\n        return address;\r\n    }\r\n\r\n    public void setAddress(String address) {\r\n        this.address = address;\r\n    }\r\n\r\n    public String getZipCode()\r\n    {\r\n        return zipCode;\r\n    }\r\n\r\n    public void setZipCode(String zipCode)\r\n    {\r\n        this.zipCode = zipCode;\r\n    }\r\n}\r\n
+===================================================================
+diff --git a/src/main/java/org/example/Owner/Owner.java b/src/main/java/org/example/Owner/Owner.java
+--- a/src/main/java/org/example/Owner/Owner.java	(revision 1e934ee8a353bc720f3ea24ad6fed05613009a1e)
++++ b/src/main/java/org/example/Owner/Owner.java	(date 1730372900445)
+@@ -14,6 +14,7 @@
+         this.zipCode = zipcode;
+     }
+ 
++
+     public Owner(int ownerId, String name, String phoneNumber, String address, String zipCode)
+     {
+         this.ownerId = ownerId;
+@@ -23,11 +24,13 @@
+         this.zipCode = zipCode;
+ 
+     }
++
+     public Owner()
+     {
+ 
+     }
+ 
++
+     public Integer getOwnerId()
+     {
+         return ownerId;
