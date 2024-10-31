@@ -15,12 +15,13 @@ public class Main
 
 
 
+
     public static void main(String[] args) throws Exception
     {
         while(true)
         {
             startMenu();
-            //signUp();
+
         }
     }
 
@@ -38,6 +39,7 @@ public class Main
             {
                 case "existing":
                     System.out.println("Welcome back! Go and input your Id");
+                    logIn();
                     break;
 
                 case "new":
@@ -70,7 +72,17 @@ public class Main
 
     }
 
-    //private static void
+    private static void logIn() throws Exception
+    {
+        OwnerDao oDao = new OwnerDaoImpl();
+        System.out.println("Here is the list of owners:");
+        oDao.readAllOwners();
+        System.out.println("Please enter your Id:");
+        int ownerId = scanner.nextInt();
+        oDao.readOwner(ownerId);
+
+
+    }
 
 
 
