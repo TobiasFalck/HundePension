@@ -1,0 +1,87 @@
+Index: src/main/java/org/example/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package org.example;\r\n\r\nimport org.example.Dog.Dog;\r\nimport org.example.Dog.DogDao;\r\nimport org.example.Dog.DogDaoImpl;\r\n\r\nimport java.sql.Connection;\r\nimport java.sql.DriverManager;\r\n\r\npublic class Main\r\n{\r\n    public static void main(String[] args) throws Exception\r\n    {\r\n    System.out.println(\"start\");\r\n\r\n\r\n    DogDao dao = new DogDaoImpl();\r\n\r\n    dao.readDog(1);\r\n\r\n    Dog d = new Dog(\"Thunder\",\"Labrador Retriever\",\"2019-10-15\");\r\n    dao.createDog(d);\r\n\r\n    dao.readAllDogs();\r\n\r\n    System.out.println(\"slut\");\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/org/example/Main.java b/src/main/java/org/example/Main.java
+--- a/src/main/java/org/example/Main.java	(revision 5ccdb746de7ceb5e45f0d4a135bfa6bbeda77c85)
++++ b/src/main/java/org/example/Main.java	(date 1730359846152)
+@@ -1,28 +1,69 @@
+ package org.example;
+ 
++import org.example.City.CityDao;
+ import org.example.Dog.Dog;
+ import org.example.Dog.DogDao;
+ import org.example.Dog.DogDaoImpl;
++import org.example.EventLog.EventLog;
++import org.example.EventLog.EventLogDao;
++import org.example.EventLog.EventlogDaoImpl;
++import org.example.Owner.Owner;
++import org.example.Owner.OwnerDao;
++import org.example.Owner.OwnerDaoImpl;
+ 
+ import java.sql.Connection;
+ import java.sql.DriverManager;
++import java.util.Scanner;
+ 
+ public class Main
+ {
++
+     public static void main(String[] args) throws Exception
+     {
+-    System.out.println("start");
++        System.out.println("Welcome to the Dog Daycare");
++        Scanner scanner = new Scanner(System.in);
++        String interfaceId = null;
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++        /*
++        OwnerDao oDao = new OwnerDaoImpl();
++        oDao.readOwner(1);
++        Owner o = new Owner("John Doe", "14439230", "Ringgade 5", "6400");
++        oDao.createOwner(o);
++        oDao.readAllOwners();
+ 
+ 
+-    DogDao dao = new DogDaoImpl();
++         */
+ 
+-    dao.readDog(1);
+ 
+-    Dog d = new Dog("Thunder","Labrador Retriever","2019-10-15");
+-    dao.createDog(d);
+ 
+-    dao.readAllDogs();
++     /*
++    DogDao dDao = new DogDaoImpl();
++    dDao.readDog(1);
++
++    //Dog d = new Dog("Thunder","Labrador Retriever","2019-10-15");
++    //dao.createDog(d);
++
++    dDao.readAllDogs();
++
++
+ 
+     System.out.println("slut");
++
++      */
+     }
+ }
+\ No newline at end of file
