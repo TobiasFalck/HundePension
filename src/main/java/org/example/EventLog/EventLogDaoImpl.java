@@ -2,7 +2,7 @@ package org.example.EventLog;
 
 import java.sql.*;
 
-public class EventlogDaoImpl implements EventLogDao {
+public class EventLogDaoImpl implements EventLogDao {
 
     private static final String URL = "jdbc:sqlserver://localhost;portNumber=1433;databaseName=dbHundePension";
     private static final String USERNAME = "sa"; // replace with your username
