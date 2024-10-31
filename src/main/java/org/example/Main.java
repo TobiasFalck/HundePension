@@ -43,11 +43,11 @@ public class Main
             case 1:
                 System.out.print("Enter owner ID to read: ");
                 int readId = scanner.nextInt();
-                Owner owner = oDao.readOwner(1);
+                Owner owner = oDao.Owner(readId);
                 if (owner != null) {
                     System.out.println("owner found: " + owner);
                     ownerChosen(scanner, owner);
-                    break
+                    break;
                 } else {
                     System.out.println("owner not found");
                 }
