@@ -17,11 +17,14 @@ public class Main
 
     public static void main(String[] args) throws Exception
     {
-        startMenu();
-        signUp();
+        while(true)
+        {
+            startMenu();
+            //signUp();
+        }
     }
 
-    private static void startMenu()
+    private static void startMenu() throws Exception
     {
         System.out.println("Welcome to Dog Daycare");
 
@@ -39,6 +42,7 @@ public class Main
 
                 case "new":
                     System.out.println("Welcome! Let's create a new Owner profile");
+                    signUp();
                     break;
 
                 default:
@@ -49,7 +53,6 @@ public class Main
 
     private static void signUp() throws Exception
     {
-
         System.out.println("Let's create the owner");
         System.out.println("Please enter a name:");
         String name = scanner.nextLine();
@@ -67,6 +70,7 @@ public class Main
 
     }
 
+    //private static void
 
 
 
