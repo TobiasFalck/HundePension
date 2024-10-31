@@ -4,13 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ab50fa1a-5ab7-4c82-8295-a69b4117a142" name="Changes" comment="Updating Master + merge">
+    <list default="true" id="ab50fa1a-5ab7-4c82-8295-a69b4117a142" name="Changes" comment="Updating Master + DaoImpl for Owner">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/EventType/EventTypeDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/EventType/EventTypeDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Owner/OwnerDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Dog/Dog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Dog/Dog.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Dog/DogDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Dog/DogDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/EventLog/EventLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/EventLog/EventLog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/EventLog/EventlogDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/EventLog/EventlogDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/EventType/EventType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/EventType/EventType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Owner/Owner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Owner/Owner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Owner/OwnerDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Owner/OwnerDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Stay/StayDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Stay/StayDaoImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -18,10 +23,18 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="TestBranch" />
+        <entry key="$PROJECT_DIR$" value="WorkingOnMain" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -49,28 +62,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/Champ/IdeaProjects/HundePension/src/main/java/org/example/Main.java&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "C:/Users/Champ/IdeaProjects/HundePension/src/main/java/org/example/Main.java",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;sqlserver&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "sqlserver"
     ]
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -88,11 +101,25 @@
       <option name="presentableId" value="Default" />
       <updated>1730195429574</updated>
       <workItem from="1730195430644" duration="1202000" />
-      <workItem from="1730282268281" duration="620000" />
+      <workItem from="1730282268281" duration="12954000" />
     </task>
+    <task id="LOCAL-00001" summary="Updating Master">
+      <option name="closed" value="true" />
+      <created>1730282909650</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1730282909650</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Updating Master" />
+    <MESSAGE value="Updating Master + DaoImpl for Owner" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updating Master + DaoImpl for Owner" />
   </component>
 </project>

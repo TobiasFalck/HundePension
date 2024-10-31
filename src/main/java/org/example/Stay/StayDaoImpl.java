@@ -4,7 +4,7 @@ import java.sql.*;
 
 public class StayDaoImpl implements StayDao {
 
-    private static final String URL = "jdbc:sqlserver://localhost;instanceName=TH;portNumber=1433;databaseName=sample";
+    private static final String URL = "jdbc:sqlserver://localhost;instanceName=TH;portNumber=1433;databaseName=dbHundePension";
     private static final String USERNAME = "sa"; // replace with your username
     private static final String PASSWORD = "123456"; // replace with your password
 

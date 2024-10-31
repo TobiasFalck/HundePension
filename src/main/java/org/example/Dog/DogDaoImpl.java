@@ -18,12 +18,13 @@ public class DogDaoImpl implements DogDao {
 
     @Override
     public void createDog(Dog dog) throws Exception {
-        String sql = "INSERT INTO tblHundeOpl VALUES (?, ?, ?)";
+        String sql = "INSERT INTO tblHundeOpl (fldNavn, fldRace, fldFoedselsDato, fldEjerId) VALUES (?, ?, ?, ?)";
         Connection conn = getConnection();
         PreparedStatement pstmt = conn.prepareStatement(sql);
         pstmt.setString(2, dog.getBreed());
         pstmt.setString(1, dog.getName());
         pstmt.setString(3, dog.getBirthday());
+        pstmt.setInt(4, dog.getOwnerId());
         int affectedRows = pstmt.executeUpdate();
         if (affectedRows > 0) {
             System.out.println("Dog added successfully.");

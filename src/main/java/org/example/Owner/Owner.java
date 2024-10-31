@@ -1,20 +1,41 @@
 package org.example.Owner;
 
 public class Owner {
-    private int id;
+    private Integer ownerId;
     private String name;
     private String phoneNumber;
     private String address;
-    private String zipcode;
+    private String zipCode;
 
     public Owner(String name, String phoneNumber, String address, String zipcode) {
         this.name = name;
         this.phoneNumber = phoneNumber;
         this.address = address;
-        this.zipcode = zipcode;
+        this.zipCode = zipcode;
     }
-    public Owner() {
-        //What doing?
+
+    public Owner(int ownerId, String name, String phoneNumber, String address, String zipCode)
+    {
+        this.ownerId = ownerId;
+        this.name = name;
+        this.phoneNumber = phoneNumber;
+        this.address = address;
+        this.zipCode = zipCode;
+
+    }
+    public Owner()
+    {
+
+    }
+
+    public Integer getOwnerId()
+    {
+        return ownerId;
+    }
+
+    public void setOwnerId(Integer ownerId)
+    {
+        this.ownerId = ownerId;
     }
 
     public String getName() {
@@ -41,11 +62,13 @@ public class Owner {
         this.address = address;
     }
 
-    public String getZipcode() {
-        return zipcode;
+    public String getZipCode()
+    {
+        return zipCode;
     }
 
-    public void setZipcode(String zipcode) {
-        this.zipcode = zipcode;
+    public void setZipCode(String zipCode)
+    {
+        this.zipCode = zipCode;
     }
 }

@@ -2,7 +2,7 @@ package org.example.EventType;
 
 
 public class EventType
-{ /*
+{/*
     private int eventTypeId;
     private String eventReport;
 
@@ -25,6 +25,8 @@ public class EventType
     {
         this.eventReport = eventReport;
     }
+    */
 
- */
+
+
 }

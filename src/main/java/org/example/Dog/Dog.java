@@ -7,7 +7,7 @@ public class Dog
     private String name;
     private String breed;
     private String birthday;
-
+    private int ownerId;
 
 
     public Dog(String name, String breed, String birthday)
@@ -20,6 +20,16 @@ public class Dog
     public Dog()
     {
 
+    }
+
+    public int getOwnerId()
+    {
+        return ownerId;
+    }
+
+    public void setOwnerId(int ownerId)
+    {
+        this.ownerId = ownerId;
     }
 
     public String getName()
