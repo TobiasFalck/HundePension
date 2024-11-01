@@ -86,7 +86,7 @@ public class Main
                 if (oDao.ownerExists(ownerId)) {
                     validId = true;
                     oDao.readOwner(ownerId);
-                    System.out.println("Welcome backe!");
+                    System.out.println("Welcome back!");
                     secondMenu();
                 } else {
                     System.out.println("Invalid ID. No owner found with ID: " + ownerId);
@@ -164,7 +164,7 @@ public class Main
         System.out.println("CRUD Operations for Owner");
         System.out.println("Choose an action: Create, Read or Read all");
         OwnerDao oDao = new OwnerDaoImpl();
-
+        Owner owner = new Owner();
 
         String action = scanner.nextLine().trim().toLowerCase();
 
@@ -175,7 +175,7 @@ public class Main
             case "read":
                 readOwner();
                 break;
-            case "readAll":
+            case "readall":
                 oDao.readAllOwners();
                 break;
             default:
@@ -227,7 +227,7 @@ public class Main
             case "read":
                 readDog();
                 break;
-            case "readAll":
+            case "readall":
                 dDao.readAllDogs();
                 break;
             default:
