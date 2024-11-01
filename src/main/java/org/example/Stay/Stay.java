@@ -7,26 +7,46 @@ public class Stay {
     private String need;
     private int weight;
     private int duration;
+    private int dogId;
 
 
-    public Stay(String vaccine, String fleatreament, String insurance, String need, int weight, int duration) {
+    public Stay(String vaccine, String fleaTreatment, String insurance, String need, int weight, int duration) {
         this.vaccine = vaccine;
-        this.fleaTreatment = fleatreament;
+        this.fleaTreatment = fleaTreatment;
         this.insurance = insurance;
         this.need = need;
         this.weight = weight;
         this.duration = duration;
     }
 
+    public Stay(String vaccine, String fleaTreatment, String insurance, String need, int weight, int duration, int dogId)
+    {
+        this.vaccine = vaccine;
+        this.fleaTreatment = fleaTreatment;
+        this.insurance = insurance;
+        this.need = need;
+        this.weight = weight;
+        this.duration = duration;
+        this.dogId = dogId;
+    }
+
     public Stay() {
-        
+
+    }
+
+    public int getDogId() {
+        return dogId;
+    }
+
+    public void setDogId(int dogId) {
+        this.dogId = dogId;
     }
 
     public String getVaccine() {
         return vaccine;
     }
 
-    public void setName(String vaccine) {
+    public void setVaccine(String vaccine) {
         this.vaccine = vaccine;
     }
 
@@ -69,8 +89,5 @@ public class Stay {
     public void setDuration(int duration)
     {
         this.duration = duration;
-    }
-
-    public void setVaccine(String string) {
     }
 }

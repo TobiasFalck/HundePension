@@ -6,6 +6,9 @@ import org.example.Dog.DogDaoImpl;
 import org.example.Owner.Owner;
 import org.example.Owner.OwnerDao;
 import org.example.Owner.OwnerDaoImpl;
+import org.example.Stay.Stay;
+import org.example.Stay.StayDao;
+import org.example.Stay.StayDaoImpl;
 
 import java.util.Scanner;
 
@@ -16,10 +19,14 @@ public class Main
 
     public static void main(String[] args) throws Exception
     {
-        startMenu();
+        while(true)
+        {
+            startMenu();
+        }
 
     }
 
+    // Start menu
     private static void startMenu() throws Exception
     {
         System.out.println("Welcome to Dog Daycare");
@@ -48,27 +55,15 @@ public class Main
         }
     }
 
+    // Calls createOwner Method then proceeds to second menu
     private static void signUp() throws Exception
     {
-        System.out.println("Let's create the owner");
-        System.out.println("Please enter a name:");
-        String name = scanner.nextLine();
-        System.out.println("Please enter a Phone number:");
-        String phoneNumber = scanner.nextLine();
-        System.out.println("Please enter an address:");
-        String address = scanner.nextLine();
-        System.out.println("Please enter a zip code:");
-        String zipCode = scanner.nextLine();
-
-        Owner owner = new Owner(name, phoneNumber, address, zipCode);
-        OwnerDao oDao = new OwnerDaoImpl();
-        oDao.createOwner(owner);
-        oDao.readAllOwners();
-
+        createOwner();
         secondMenu();
 
     }
 
+    // Prompts and check for a valid Owner ID
     private static void logIn() throws Exception
     {
         OwnerDao oDao = new OwnerDaoImpl();
@@ -95,15 +90,17 @@ public class Main
                 System.out.println("Invalid input. Please enter a numeric ID.");
                 scanner.nextLine();
             }
+
         }
     }
 
+    // Second menu that prompts you to pick any table you want to edit
     private static void secondMenu() throws Exception
     {
         boolean exit = false;
         while (!exit)
         {
-            System.out.println("In this Menu you can: Create - Read - Update - Delete Any of the following tables");
+            System.out.println("\nIn this Menu you can: Create - Read - Update - Delete Any of the following tables");
             System.out.println("Choose any of the following options:");
             System.out.println("1. Owner");
             System.out.println("2. Dog");
@@ -122,15 +119,19 @@ public class Main
                 case 1:
                     System.out.println("You Selected Owner");
                     crudMenuForOwner();
+                    waitForInput();
                     break;
 
                 case 2:
                     System.out.println("You Selected Dog");
                     crudMenuForDog();
+                    waitForInput();
                     break;
 
                 case 3:
                     System.out.println("You Selected Stay");
+                    crudMenuForStay();
+                    waitForInput();
                     break;
 
                 case 4:
@@ -159,12 +160,12 @@ public class Main
         }
     }
 
+    // a CRUD Menu for the owner class
     private static void crudMenuForOwner() throws Exception
     {
         System.out.println("CRUD Operations for Owner");
         System.out.println("Choose an action: Create, Read or Read all");
         OwnerDao oDao = new OwnerDaoImpl();
-        Owner owner = new Owner();
 
         String action = scanner.nextLine().trim().toLowerCase();
 
@@ -183,6 +184,7 @@ public class Main
         }
     }
 
+    // Method to create a new Owner
     private static void createOwner() throws Exception
     {
         System.out.println("Let's create the owner");
@@ -203,6 +205,7 @@ public class Main
 
     }
 
+    // Method to read the owner table in our Database
     private static void readOwner() throws Exception
     {
         System.out.print("Enter Owner ID to read: ");
@@ -212,6 +215,7 @@ public class Main
         oDao.readOwner(ownerId);
     }
 
+    // A CRUD Menu for the dog class
     private static void crudMenuForDog() throws Exception
     {
         System.out.println("CRUD Operations for Dog");
@@ -235,6 +239,7 @@ public class Main
         }
     }
 
+    // Method to create a new Dog
     private static void createDog() throws Exception
     {
         System.out.println("Let's create a Dog");
@@ -253,6 +258,7 @@ public class Main
         dDao.readAllDogs();
     }
 
+    // Method to read the dog table in our Database
     private static void readDog() throws Exception
     {
         System.out.print("Enter Dog ID to read: ");
@@ -262,43 +268,71 @@ public class Main
         dDao.readDog(dogId);
     }
 
+    // Makes the Second menu more readable, prevents bloated printouts
+    private static void waitForInput()
+    {
+        System.out.println("\nPress Enter to continue");
+        scanner.nextLine();
+    }
+
+    // A CRUD menu for the stay class
+    private static void crudMenuForStay() throws Exception
+    {
+        System.out.println("CRUD Operations for Stay");
+        System.out.println("Choose an action: Create, Read, Update, Delete");
+        StayDaoImpl sDao = new StayDaoImpl();
+
+        String action = scanner.nextLine().trim().toLowerCase();
+        switch (action) {
+            case "create":
+                createStay();
+                break;
+            case "read":
+                readStay();
+                break;
+            case "readall":
+                sDao.readAllStay();
+                break;
+            default:
+                System.out.println("Invalid action. Please choose Create, Read, Update, or Delete.");
+        }
+    }
+
+    // Method to create a stay for a dog
+    private static void createStay() throws Exception
+    {
+        System.out.println("Let's create a Stay");
+        System.out.println("Please enter a if they have gotten their vaccine (y/n): ");
+        String vaccine = scanner.nextLine();
+        System.out.println("Please enter a if they have gotten their flea treatment (y/n): ");
+        String fleaTreatment = scanner.nextLine();
+        System.out.println("Please enter a if they have gotten their vaccine (y/n): ");
+        String insurance = scanner.nextLine();
+        System.out.println("Please enter the dogs special needs if it has any (max 200 characters): ");
+        String need = scanner.nextLine();
+        System.out.println("Please enter Weight in KG: ");
+        int weight = scanner.nextInt();
+        System.out.println("Please enter the length of the stay in days: ");
+        int duration = scanner.nextInt();
+        System.out.println("Please assign a dogId: ");
+        int dogId = scanner.nextInt();
+
+        Stay stay = new Stay(vaccine, fleaTreatment, insurance, need, weight, duration, dogId);
+        StayDao sDao = new StayDaoImpl();
+        sDao.createStay(stay);
+        sDao.readAllStay();
+
+    }
+
+    // Method to read the stay table in our Database
+    private static void readStay() throws Exception
+    {
+        System.out.print("Enter Stay ID to read: ");
+        int stayId = scanner.nextInt();
+        scanner.nextLine();
+        StayDao sDao = new StayDaoImpl();
+        sDao.readStay(stayId);
+    }
 
 
-
-
-
-
-
-
-
-
-
-
-
-        /*
-        OwnerDao oDao = new OwnerDaoImpl();
-        oDao.readOwner(1);
-        Owner o = new Owner("John Doe", "14439230", "Ringgade 5", "6400");
-        oDao.createOwner(o);
-        oDao.readAllOwners();
-
-
-         */
-
-
-
-     /*
-    DogDao dDao = new DogDaoImpl();
-    dDao.readDog(1);
-
-    //Dog d = new Dog("Thunder","Labrador Retriever","2019-10-15");
-    //dao.createDog(d);
-
-    dDao.readAllDogs();
-
-
-
-    System.out.println("slut");
-
-      */
 }
