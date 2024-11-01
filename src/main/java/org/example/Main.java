@@ -6,6 +6,9 @@ import org.example.Dog.DogDaoImpl;
 import org.example.Owner.Owner;
 import org.example.Owner.OwnerDao;
 import org.example.Owner.OwnerDaoImpl;
+import org.example.Stay.Stay;
+import org.example.Stay.StayDao;
+import org.example.Stay.StayDaoImpl;
 
 import java.util.Scanner;
 
@@ -131,6 +134,7 @@ public class Main
 
                 case 3:
                     System.out.println("You Selected Stay");
+                    crudMenuForStay();
                     break;
 
                 case 4:
@@ -262,8 +266,60 @@ public class Main
         dDao.readDog(dogId);
     }
 
+    private static void crudMenuForStay() throws Exception
+    {
+        System.out.println("CRUD Operations for Stay");
+        System.out.println("Choose an action: Create, Read, Update, Delete");
+        StayDaoImpl sDao = new StayDaoImpl();
 
+        String action = scanner.nextLine().trim().toLowerCase();
+        switch (action) {
+            case "create":
+                createStay();
+                break;
+            case "read":
+                readStay();
+                break;
+            case "readall":
+                sDao.readAllStay();
+                break;
+            default:
+                System.out.println("Invalid action. Please choose Create, Read, Update, or Delete.");
+        }
+    }
 
+    private static void createStay() throws Exception
+    {
+        System.out.println("Let's create a Stay");
+        System.out.println("Please enter a if they have gotten their vaccine (y/n): ");
+        String vaccine = scanner.nextLine();
+        System.out.println("Please enter a if they have gotten their flea treatment (y/n): ");
+        String fleaTreatment = scanner.nextLine();
+        System.out.print("Please enter a if they have gotten their vaccine (y/n): ");
+        String insurence = scanner.nextLine();
+        System.out.println("Please enter Weight in KG: ");
+        int weight = scanner.nextInt();
+        System.out.println("Please enter the dogs special needs if it has any (max 200 characters): ");
+        String need = scanner.nextLine();
+        System.out.println("Please enter the length of the stay in days: ");
+        int duration = scanner.nextInt();
+        System.out.println("Please assign a dogId: ");
+        int dogId = scanner.nextInt();
+
+        Stay stay = new Stay(vaccine, fleaTreatment, insurence, need, weight, duration, dogId);
+        StayDao sDao = new StayDaoImpl();
+        sDao.createStay(stay);
+        sDao.readAllStay();
+    }
+
+    private static void readStay() throws Exception
+    {
+        System.out.print("Enter Stay ID to read: ");
+        int stayId = scanner.nextInt();
+        scanner.nextLine();
+        StayDao sDao = new StayDaoImpl();
+        sDao.readStay(String.valueOf(stayId));
+    }
 
 
 
