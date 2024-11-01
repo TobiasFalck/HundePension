@@ -1,5 +1,6 @@
 package org.example;
 
+import org.example.Dog.Dog;
 import org.example.Dog.DogDao;
 import org.example.Dog.DogDaoImpl;
 import org.example.Owner.Owner;
@@ -125,6 +126,7 @@ public class Main
 
                 case 2:
                     System.out.println("You Selected Dog");
+                    crudMenuForDog();
                     break;
 
                 case 3:
@@ -162,7 +164,7 @@ public class Main
         System.out.println("CRUD Operations for Owner");
         System.out.println("Choose an action: Create, Read or Read all");
         OwnerDao oDao = new OwnerDaoImpl();
-        Owner o = new Owner();
+
 
         String action = scanner.nextLine().trim().toLowerCase();
 
@@ -210,10 +212,11 @@ public class Main
         oDao.readOwner(ownerId);
     }
 
-    /*
-    private static void crudMenuForDog() throws Exception {
+    private static void crudMenuForDog() throws Exception
+    {
         System.out.println("CRUD Operations for Dog");
         System.out.println("Choose an action: Create, Read, Update, Delete");
+        DogDao dDao = new DogDaoImpl();
 
         String action = scanner.nextLine().trim().toLowerCase();
 
@@ -224,18 +227,42 @@ public class Main
             case "read":
                 readDog();
                 break;
-            case "update":
-                updateDog();
-                break;
-            case "delete":
-                deleteDog();
+            case "readAll":
+                dDao.readAllDogs();
                 break;
             default:
                 System.out.println("Invalid action. Please choose Create, Read, Update, or Delete.");
         }
     }
 
-     */
+    private static void createDog() throws Exception
+    {
+        System.out.println("Let's create a Dog");
+        System.out.println("Please enter a Name:");
+        String name = scanner.nextLine();
+        System.out.println("Please enter a Breed:");
+        String breed = scanner.nextLine();
+        System.out.println("Please enter a date of Birth:");
+        String birthday = scanner.nextLine();
+        System.out.println("Please assign a owner ID to the dog:");
+        int ownerId = scanner.nextInt();
+
+        Dog dog = new Dog(name, breed, birthday, ownerId);
+        DogDao dDao = new DogDaoImpl();
+        dDao.createDog(dog);
+        dDao.readAllDogs();
+    }
+
+    private static void readDog() throws Exception
+    {
+        System.out.print("Enter Dog ID to read: ");
+        int dogId = scanner.nextInt();
+        scanner.nextLine();
+        DogDao dDao = new DogDaoImpl();
+        dDao.readDog(dogId);
+    }
+
+
 
 
 

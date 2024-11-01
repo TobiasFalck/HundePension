@@ -4,6 +4,7 @@ package org.example.Dog;
 
 public class Dog
 {
+    private int dogId;
     private String name;
     private String breed;
     private String birthday;
@@ -20,6 +21,25 @@ public class Dog
     public Dog()
     {
 
+    }
+
+    public Dog(String name, String breed, String birthday, int ownerId)
+    {
+        this.name = name;
+        this.breed = breed;
+        this.birthday = birthday;
+        this.ownerId = ownerId;
+
+    }
+
+    public int getDogId()
+    {
+        return dogId;
+    }
+
+    public void setDogId(int dogId)
+    {
+        this.dogId = dogId;
     }
 
     public int getOwnerId()
